@@ -16,44 +16,11 @@
 
 body {
   margin: 0;
-  display: flex;
   padding: 0;
-  flex-direction: column;
-
-  /* min-height: 100vh; */
-
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  background-color: rgb(232, 220, 220);
-  height: 80px;
-}
-
-.company-logo img {
-  width: 50px;
-  height: 50px;
-}
-
-.nav-links ul {
-  gap: 20px;
-}
-
-.hover-link {
-  cursor: pointer;
 }
 
 .hover-link:hover {
+  cursor: pointer;
   color: rgb(223, 131, 146)
 }
 
@@ -64,36 +31,61 @@ ul {
 .search-bar {
   height: 25px;
   gap: 2px;
-
 }
 
-.conditions {
-  font-size: 12px;
-  color: #666;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.nav-container {
+/* Navigation Bar */
+.nav-bar-container {
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem 1.5rem;
-  margin-top: 1rem;
+  padding: 16px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.4);
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+
+  a {
+    text-decoration: dnone;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .company-logo-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .nav-link-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+
+  .nav-link-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link-items li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
 }
 
-.nav-link-items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-
-}
-
-.nav-item {
-  margin: 0 10px;
-  font-size: 1.2rem;
-}
 
 .search-container {
   display: flex;
@@ -108,40 +100,6 @@ ul {
   border-radius: 8px;
   padding: 5px;
   margin-left: 5px;
-  cursor: pointer;
-}
-
-
-/* footer {
- 
-  padding: 40px;
-  display: flex;
-  width: 100%;
-  /* justify-content: space-between; */
-/* align-items: center; */
-/* }
-
-*/
-/* .footer-content {
-  display: flex;
-  flex-direction: row;
-  color: white;
-} */
-
-.company-logo img {
-  width: 100px;
-  /* Adjust as needed */
-}
-
-.nav-link-items {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link-items li {
-  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -162,24 +120,27 @@ ul {
   cursor: pointer;
 }
 
-.text-section {
-  padding: 20px;
-  text-align: center;
-}
-
-.text-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 80dvh;
+.main-landing-page {
+  position: relative;
+  top: 80px;
   background-image: url("./asset/fontview.png");
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: flex-end;
-  /* margin-right: 2rem; */
-  padding: 4rem;
 
+  .text-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80dvh;
+    justify-content: flex-end;
+    padding: 4rem;
+  }
 }
+
+
+
 
 #company-info h2 {
   text-align: center;
@@ -200,7 +161,7 @@ ul {
 
 
 
-/* Shank */
+/* Welcome to MediHost */
 .welcome-to-medihost {
   background-color: #f2f2f2;
   align-items: center;
