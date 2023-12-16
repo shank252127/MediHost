@@ -36,21 +36,53 @@
       <img class="search-img" src="./assets/Searchbar.png" alt="Search" />
     </div> -->
   </nav>
-
   <main>
+    <!-- Main Landing Page -->
     <section class="main-landing-page">
       <div class="text-section">
-        <div id="company-info">
-          <h2>We are ready to <br>help your health <br> problems</h2>
-          <p>Your one-stop destination for credible medical information and expert <br>insights. Explore, learn, and
-            take control of your health with us.</p>
+        <div class="company-info">
+          <div class="heading">We are ready to help your health problems</div>
+          <div class="sub-heading">Your one-stop destination for credible medical information and expert <br>insights.
+            Explore, learn, and
+            take control of your health with us.</div>
+        </div>
+        <div class="login-container">
+          <h2 style="text-align: center;">Connect With Us !!!</h2>
+          <form>
+            <div class="form-group">
+              <label for="username">Name<span style="color: red;">*</span></label>
+              <input type="text" id="username" name="username" placeholder="Patient Name" required>
+            </div>
+            <div class="form-group">
+              <label for="Email">Email<span style="color: red;">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="Phone-Number">Phone Number<span style="color: red;">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone number" required>
+            </div>
+            <div class="form-group">
+              <label for="Phone-Number">Country<span style="color: red;">*</span></label>
+              <input type="text" id="text" name="city" placeholder="Enter City" required>
+            </div>
+            <div class="form-group">
+              <label for="Phone-Number">City<span style="color: red;">*</span></label>
+              <input type="text" id="text" name="city" placeholder="Enter City" required>
+            </div>
+            <div class="form-group">
+              <label for="Email">Description<span style="color: red;">*</span></label>
+              <textarea id="description" name="description" placeholder="Describe The Current Medical Problem"
+                required></textarea>
+            </div>
+            <!-- <div class="form-group">
+              <label for="Patient">Patient's Age or Date Of Birth<span style="color: red;">*</span></label>
+              <input type="text" id="text" name="city" placeholder="Enter City" required>
+            </div> -->
+            <button type="submit">SUBMIT</button>
+          </form>
         </div>
       </div>
     </section>
-
-
-
-
     <!-- Welcome to Medihost -->
     <section class="welcome-to-medihost">
       <div class="welcome-container">
@@ -93,46 +125,6 @@
         <div class="connect-with-parent">
           <button class="connect-with-btn">Connect With Us!</button>
         </div>
-    </section>
-    <!-- ABOUT US -->
-    <section class="about-us-section">
-      <div class="about-us">
-        <div class="photo-part">
-          <img class="male-doc" src="./asset/male-doc.svg" alt="">
-          <img class="star-part" src="./asset/star-about.svg" alt="">
-          <img class="female-doc" src="./asset/female-doc.svg" alt="">
-        </div>
-        <div class="content-part">
-          <div class="about-prefix">
-            <div class="vertical-border"></div>
-            <div class="about-us-heading">About Us</div>
-          </div>
-          <div class="about-title">The Great Place of Medical Hospital Center</div>
-          <div class="about-details">Your one-stop destination for credible medical information and expert insights.
-            Explore, learn, and take
-            control of your health with us.</div>
-          <div class="list-of-feature">
-            <div class="row-one">
-              <div class="col-one">
-                <img class="mark-tick" src="./asset/mark-tick.png" alt="">Pharmacy on Clinic
-              </div>
-              <div class="col-two"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Oxizen on Wheel</div>
-            </div>
-            <div class="row-one">
-              <div class="col-one"><img class="mark-tick" src="./asset/mark-tick.png" alt="">24/7 Medical Emergency
-              </div>
-              <div class="col-tow"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Oxizen on Wheel</div>
-            </div>
-            <div class="row-one">
-              <div class="col-one"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Ambulance Services</div>
-              <div class="col-two"></div>
-            </div>
-          </div>
-          <div class="check-more-parent">
-            <button class="check-more-btn" type="button">Discover More</button>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- SEARCH SECTION -->
     <div class="search-section">
@@ -317,6 +309,132 @@
         </div>
       </div>
     </div>
+    <!-- BLOG -->
+    <section class="blog-container">
+      <div class="blog-body">
+        <div class="section-header">
+          <div class="prefix">
+            Blogs
+          </div>
+          <div class="heading">
+            Our Stories
+          </div>
+        </div>
+        <div class="articles">
+          <div class="blog-card">
+            <div class="article-wrapper">
+              <figure>
+                <img src="https://picsum.photos/id/1011/800/450" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>This is some title</h2>
+                <p>
+                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                  bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                </p>
+                <a href="#" class="read-more">
+                  Read more <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="article-wrapper">
+              <figure>
+                <img src="https://picsum.photos/id/1005/800/450" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>This is some title</h2>
+                <p>
+                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                  bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                </p>
+                <a href="#" class="read-more">
+                  Read more <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="article-wrapper">
+              <figure>
+                <img src="https://picsum.photos/id/103/800/450" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>This is some title</h2>
+                <p>
+                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                  bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                </p>
+                <a href="#" class="read-more">
+                  Read more <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-more-parent">
+          <button class="check-more-btn">Check more</button>
+        </div>
+      </div>
+
+    </section>
+    <!-- ABOUT US -->
+    <section class="about-us-section">
+      <div class="about-us">
+        <div class="photo-part">
+          <img class="male-doc" src="./asset/male-doc.svg" alt="">
+          <img class="star-part" src="./asset/star-about.svg" alt="">
+          <img class="female-doc" src="./asset/female-doc.svg" alt="">
+        </div>
+        <div class="content-part">
+          <div class="about-prefix">
+            <div class="vertical-border"></div>
+            <div class="about-us-heading">About Us</div>
+          </div>
+          <div class="about-title">The Great Place of Medical Hospital Center</div>
+          <div class="about-details">Your one-stop destination for credible medical information and expert insights.
+            Explore, learn, and take
+            control of your health with us.</div>
+          <div class="list-of-feature">
+            <div class="row-one">
+              <div class="col-one">
+                <img class="mark-tick" src="./asset/mark-tick.png" alt="">Pharmacy on Clinic
+              </div>
+              <div class="col-two"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Oxizen on Wheel</div>
+            </div>
+            <div class="row-one">
+              <div class="col-one"><img class="mark-tick" src="./asset/mark-tick.png" alt="">24/7 Medical Emergency
+              </div>
+              <div class="col-tow"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Oxizen on Wheel</div>
+            </div>
+            <div class="row-one">
+              <div class="col-one"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Ambulance Services</div>
+              <div class="col-two"></div>
+            </div>
+          </div>
+          <div class="check-more-parent">
+            <button class="check-more-btn" type="button">Discover More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CUSTOMER REVIEW -->
     <div class="customer-review-slider">
       <div id="carouselExampleIndicators" class="cutomer-review-body carousel slide" data-ride="carousel">
@@ -417,91 +535,7 @@
         </div>
       </div>
     </div>
-    <!-- BLOG -->
-    <section class="blog-container">
-      <div class="blog-body">
-        <div class="section-header">
-          <div class="prefix">
-            Blogs
-          </div>
-          <div class="heading">
-            Our Stories
-          </div>
-        </div>
-        <div class="articles">
-          <div class="blog-card">
-            <div class="article-wrapper">
-              <figure>
-                <img src="https://picsum.photos/id/1011/800/450" alt="" />
-              </figure>
-              <div class="article-body">
-                <h2>This is some title</h2>
-                <p>
-                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
-                  bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                </p>
-                <a href="#" class="read-more">
-                  Read more <span class="sr-only">about this is some title</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="article-wrapper">
-              <figure>
-                <img src="https://picsum.photos/id/1005/800/450" alt="" />
-              </figure>
-              <div class="article-body">
-                <h2>This is some title</h2>
-                <p>
-                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
-                  bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                </p>
-                <a href="#" class="read-more">
-                  Read more <span class="sr-only">about this is some title</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <div class="article-wrapper">
-              <figure>
-                <img src="https://picsum.photos/id/103/800/450" alt="" />
-              </figure>
-              <div class="article-body">
-                <h2>This is some title</h2>
-                <p>
-                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
-                  bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                </p>
-                <a href="#" class="read-more">
-                  Read more <span class="sr-only">about this is some title</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="check-more-parent">
-          <button class="check-more-btn">Check more</button>
-        </div>
-      </div>
 
-    </section>
     <!-- FOOTER -->
     <footer class="footer-container">
       <div class="footer-menu-row">
