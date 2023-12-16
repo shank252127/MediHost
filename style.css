@@ -265,6 +265,7 @@ ul {
       }
 
       .book-appointment {
+        color: white;
         background-color: #B90F0F;
       }
 
@@ -273,6 +274,7 @@ ul {
       }
 
       .check-hospital {
+        color: white;
         background-color: #159EEC;
       }
 
