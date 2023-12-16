@@ -296,140 +296,6 @@ ul {
   flex: 0 0 auto;
 }
 
-#fourth-page {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-
-}
-
-#fourth-page .logo {
-  display: block;
-  margin-bottom: 20px;
-}
-
-#fourth-page h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-#fourth-page h3 {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-#fourth-page p {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-#fourth-page button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#fourth-page button:hover {
-  background-color: #555;
-}
-
-.fourth-page {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 70dvh;
-  background-image: url("https://img.freepik.com/free-psd/interior-view-operating-room-generative-ai_587448-1946.jpg?size=626&ext=jpg&ga=GA1.1.1925958060.1702444450&semt=ais");
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: space-evenly;
-}
-
-#fifth-page {
-  padding: 40px;
-  text-align: left;
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
-  margin-left: auto;
-  width: 50%;
-}
-
-
-
-#fifth-page h3 {
-  font-size: 18px;
-  color: #333;
-}
-
-#fifth-page h2 {
-  font-size: 24px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-#fifth-page p {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-#fifth-page button {
-  padding: 10px 20px;
-  background-color: #1e88ba;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#fifth-page button:hover {
-  background-color: #4290ea;
-}
-
-#photo-section {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-#photo-section img {
-  display: block;
-  max-width: 100%;
-}
-
-.fifth-page {
-  display: flex;
-}
-
-.photo-part {
-  flex: 1;
-  padding: 20px;
-}
-
-.photo-part img {
-  max-width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -438,6 +304,46 @@ ul {
 
 /* Shank */
 
+
+.we-are-best {
+  padding: 56px;
+  background-image: url("https://img.freepik.com/free-psd/interior-view-operating-room-generative-ai_587448-1946.jpg?size=626&ext=jpg&ga=GA1.1.1925958060.1702444450&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .best-container {
+    margin: auto;
+    max-width: 1260px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #f9f9f9;
+
+    .best-content,
+    .best-subheading,
+    .best-heading {
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .best-heading {
+      font-size: 30px;
+    }
+
+    .best-subheading {
+      font-size: 22px;
+    }
+
+    .best-content {
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+/* About us section */
 .about-us-section {
   margin: auto;
   max-width: 1260px;
