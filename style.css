@@ -20,6 +20,12 @@ body {
 }
 
 /* COMMON ELEMENTS */
+
+.company-logo-img {
+  height: 80px;
+  width: 80px;
+}
+
 .check-more-parent,
 .connect-with-parent {
   margin-top: 24px;
@@ -148,11 +154,6 @@ body {
     list-style: none;
   }
 
-  .company-logo-img {
-    height: 80px;
-    width: 80px;
-  }
-
   .nav-link-items {
     display: flex;
     justify-content: space-around;
@@ -221,6 +222,9 @@ body {
 
   .text-section {
     margin: auto 50px;
+    padding: 16px;
+    margin: auto;
+    max-width: 1600px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -317,9 +321,6 @@ body {
   }
 }
 
-
-
-
 /* Welcome to MediHost */
 .welcome-to-medihost {
   background-color: #f2f2f2;
@@ -329,6 +330,7 @@ body {
   .welcome-container {
     margin: auto;
     max-width: 1260px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
 
@@ -427,6 +429,7 @@ body {
   .best-container {
     margin: auto;
     max-width: 1260px;
+    padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 40px;
@@ -454,13 +457,11 @@ body {
   }
 }
 
-
-
 /* About us section */
 .about-us-section {
   margin: auto;
   max-width: 1260px;
-
+  padding: 16px;
 
   .about-us {
     display: flex;
@@ -567,6 +568,7 @@ body {
   .search-body {
     margin: auto;
     max-width: 1260px;
+    padding: 16px;
 
     .know-top-hospital,
     .exclusive-package,
@@ -693,6 +695,7 @@ body {
   padding-bottom: 32px;
 
   .cutomer-review-body {
+    padding: 16px;
     margin: auto;
     height: 500px;
     max-width: 1260px;
@@ -874,6 +877,7 @@ body {
   background-color: #F8F7F7;
 
   .blog-body {
+    padding: 16px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -958,6 +962,253 @@ body {
 
     img:hover {
       cursor: pointer;
+    }
+  }
+}
+
+/* Tablet View */
+@media only screen and (max-width: 1100px) and (min-width: 700px) {
+
+  .nav-bar-container {
+    flex-wrap: wrap;
+
+    .logo-medihost {
+      order: 1;
+      width: 50%;
+    }
+
+    .connect-with-parent {
+      order: 1;
+      width: 50%;
+    }
+
+    .nav-link-items {
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 100%;
+      order: 3;
+    }
+
+
+    .nav-item {
+      font-size: 14px;
+    }
+
+  }
+
+  .main-landing-page {
+    .company-info {
+      .heading {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .sub-heading {
+        font-size: 14px;
+      }
+    }
+
+    .login-container {
+      margin-top: 10px;
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .form-group {
+        label {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .welcome-to-medihost {
+
+    .welcome-container {
+      padding: 0;
+
+      .content-welcome {
+        .welcome-prefix {
+          font-size: 14px;
+          margin-bottom: 12px;
+        }
+
+        .welcome-heading {
+          font-size: 24px;
+        }
+
+        .welcome-subheading {
+          font-size: 12px;
+        }
+      }
+
+
+
+      .welcome-buttons {
+        width: 100%;
+        grid-gap: 5%;
+        padding: 16px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .button-text {
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+
+  .we-are-best {
+    .best-container {
+      .best-heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .best-subheading {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .best-content {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .search-section {
+    .search-body {
+      .know-top-hospital {
+        .prefix {
+          font-size: 16px !important;
+        }
+
+        .heading {
+          .text {
+            font-size: 28px !important;
+
+          }
+        }
+
+        .suffix {
+          font-size: 12px !important;
+          margin-top: 12px !important;
+        }
+
+      }
+
+      .top-hospital-in {
+
+        .prefix,
+        .suffix {
+          font-size: 16px !important;
+        }
+
+        .heading {
+          font-size: 28px !important;
+        }
+      }
+
+      .exclusive-package {
+        .prefix {
+          font-size: 16px !important;
+        }
+
+        .top {
+          font-size: 10px !important;
+        }
+      }
+
+      .hospital-card {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        grid-row-gap: 40px;
+
+        .hospital-card-body {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .about-us-section {
+    .about-us {
+      grid-gap: 10%;
+    }
+
+    .photo-part {
+      width: 40%;
+
+      .male-doc {
+        width: 200px;
+      }
+
+      .star-part {
+        width: 280px;
+      }
+
+      .female-doc {
+        height: 250px;
+        top: 350px
+      }
+    }
+
+    .content-part {
+      .about-prefix {
+        .about-us-heading {
+          font-size: 18px;
+        }
+      }
+
+      .about-title {
+        font-size: 28px;
+      }
+
+
+      .about-details {
+        font-size: 14px;
+      }
+
+      .list-of-feature {
+        font-size: 12px;
+      }
+    }
+
+  }
+
+
+
+  .footer-container {
+    .footer-menu-row {
+      flex-wrap: wrap;
+
+      .nav-item {
+        font-size: 14px;
+      }
+
+      .logo-medihost {
+        order: 1;
+        width: 50%;
+      }
+
+      .connect-with-parent {
+        order: 1;
+        width: 50%;
+      }
+
+      .nav-link-items {
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 100%;
+        order: 3;
+      }
     }
   }
 }
