@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <div class="login-container">
+        <h2 style="text-align: center;">Help Us With Patient Details</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Name<span style="color: red;">*</span></label>
+                <input type="text" id="username" name="username"placeholder="Patient Name" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email<span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email"placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone-Number">Phone Number<span style="color: red;">*</span></label>
+                <input type="tel" id="phone" name="phone"placeholder="Your Phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone-Number">City<span style="color: red;">*</span></label>
+                <input type="text" id="text" name="city"placeholder="Enter City" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Description<span style="color: red;">*</span></label>
+                <textarea id="description" name="description" placeholder="Describe The Current Medical Problem"
+                    required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="Patient">Patient's Age or Date Of Birth<span style="color: red;">*</span></label>
+                <input type="text" id="text" name="city"placeholder="Enter City" required>
+            </div>
+            
+            <button type="submit">SUBMIT</button>
+            <p class="conditions">By submitting the form I agree to the Terms of Use and Privacy Policy of Vaidam Health</p>
+
+        </form>
+    </div>
+</body>
+
+</html>
