@@ -169,15 +169,15 @@ ul {
 
 .text-section {
   display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 80dvh;
-    background-image: url("./asset/fontview.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content:flex-end;
-    /* margin-right: 2rem; */
-    padding:4rem;
+  flex-direction: row;
+  align-items: center;
+  height: 80dvh;
+  background-image: url("./asset/fontview.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  /* margin-right: 2rem; */
+  padding: 4rem;
 
 }
 
@@ -416,12 +416,6 @@ ul {
   max-width: 100%;
 }
 
-.content-part {
-  flex: 1;
-  padding: 20px;
-
-}
-
 
 
 
@@ -443,6 +437,82 @@ ul {
 
 
 /* Shank */
+
+.about-us-section {
+  margin: auto;
+  max-width: 1260px;
+
+
+  .about-us {
+    display: flex;
+    grid-gap: 20px;
+    margin-top: 56px;
+    margin-bottom: 260px;
+  }
+
+  .photo-part {
+    display: flex;
+    width: 50%;
+
+    .male-doc {
+      width: 280px;
+
+    }
+
+    .star-part {
+      position: absolute;
+      max-width: 100%;
+      width: 440px;
+    }
+
+    .female-doc {
+      height: 350px;
+      position: relative;
+      top: 180px;
+      left: -100px;
+    }
+  }
+
+  .content-part {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .about-prefix {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 20px;
+
+
+      .vertical-border {
+        rotate: calc(90deg);
+        width: 25px;
+        height: 0px;
+        border: 1px solid #0E8C3B;
+      }
+
+      .about-us-heading {
+        color: #0E8C3B;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+
+    .about-title {
+      font-size: 36px;
+      font-weight: 500;
+      color: #04091B;
+      margin-bottom: 18px;
+    }
+
+    .about-details {
+      font-size: 18px;
+      color: #04091B;
+      margin-bottom: 30px;
+    }
+  }
+}
 
 /* SEARCH HOSPITAL */
 .search-section {
