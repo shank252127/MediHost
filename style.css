@@ -1178,12 +1178,14 @@ body {
 
       .list-of-feature {
         font-size: 12px;
+
+        .row-one {
+          max-width: 100%;
+        }
       }
     }
 
   }
-
-
 
   .footer-container {
     .footer-menu-row {
@@ -1210,5 +1212,379 @@ body {
         order: 3;
       }
     }
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 699px) {
+  .nav-bar-container {
+    position: static;
+    flex-wrap: wrap;
+
+    .logo-medihost {
+      order: 1;
+      width: 50%;
+    }
+
+    .connect-with-parent {
+      order: 1;
+      width: 50%;
+
+      .connect-with-btn {
+        font-size: 12px;
+      }
+    }
+
+    .nav-link-items {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 10px;
+      width: 100%;
+      order: 3;
+    }
+
+
+    .nav-item {
+      font-size: 12px;
+    }
+
+  }
+
+  .main-landing-page {
+    top: 0;
+
+    .text-section {
+      padding: 12px;
+      flex-direction: column;
+      align-items: center;
+
+      .company-info {
+        width: 100%;
+
+        .heading {
+          margin-bottom: 10px;
+        }
+      }
+
+      .login-container {
+        margin: 12px;
+        width: 100%;
+      }
+    }
+
+    .company-info {
+      .heading {
+        font-size: 16px;
+        line-height: 32px;
+      }
+
+      .sub-heading {
+        font-size: 14px;
+      }
+    }
+
+    .login-container {
+      margin-top: 10px;
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .form-group {
+        label {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .welcome-to-medihost {
+    padding: 12px;
+
+    .welcome-container {
+      padding: 0;
+
+      .content-welcome {
+        .welcome-prefix {
+          font-size: 14px;
+          margin-bottom: 12px;
+        }
+
+        .welcome-heading {
+          font-size: 24px;
+        }
+
+        .welcome-subheading {
+          font-size: 12px;
+        }
+      }
+
+
+
+      .welcome-buttons {
+        width: 100%;
+        grid-gap: 10%;
+        padding: 16px;
+        flex-direction: column;
+
+        .card-button {
+          margin: 5px 0;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .button-text {
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+
+  .we-are-best {
+    padding: 12px;
+
+    .best-container {
+      .best-heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .best-subheading {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .best-content {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .search-section {
+    .search-body {
+      .know-top-hospital {
+        .prefix {
+          font-size: 12px !important;
+        }
+
+        .heading {
+          .text {
+            font-size: 18px !important;
+
+          }
+        }
+
+        .suffix {
+          font-size: 10px !important;
+          margin-top: 12px !important;
+        }
+
+      }
+
+      .top-hospital-in {
+        margin-top: 20px;
+
+        .prefix,
+        .suffix {
+          font-size: 14px !important;
+        }
+
+        .heading {
+          font-size: 18px !important;
+        }
+      }
+
+      .exclusive-package {
+        margin-top: 20px;
+
+        .hospital-content {
+          margin-bottom: 20px;
+        }
+
+        .prefix {
+          font-size: 14px !important;
+        }
+
+        .top {
+          font-size: 10px !important;
+        }
+      }
+
+      .hospital-card {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        grid-row-gap: 40px;
+
+        .hospital-card-body {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .hospital-card {
+    .hospital-card-title {
+      font-size: 14px !important;
+    }
+
+    .hospital-border {
+      margin: 5px 0 !important;
+    }
+
+    .hospital-address {
+      font-size: 12px !important;
+    }
+  }
+
+  .blog-container {
+    .prefix {
+      font-size: 18px !important;
+    }
+
+    .heading {
+      font-size: 22px !important;
+    }
+
+    .articles {
+      flex-wrap: wrap;
+    }
+  }
+
+  .about-us-section {
+    .about-us {
+      flex-direction: column;
+      grid-gap: 10%;
+      margin-bottom: 20px;
+    }
+
+    .photo-part {
+      width: 100%;
+
+      .male-doc {
+        width: 200px;
+      }
+
+      .star-part {
+        width: 280px;
+      }
+
+      .female-doc {
+        height: 230px;
+        top: 120px
+      }
+    }
+
+    .content-part {
+      margin-top: 100px;
+      width: 100%;
+
+      .about-prefix {
+        .about-us-heading {
+          font-size: 18px;
+        }
+      }
+
+      .about-title {
+        font-size: 22px;
+      }
+
+
+      .about-details {
+        font-size: 14px;
+      }
+
+      .list-of-feature {
+        font-size: 12px;
+
+        .row-one {
+          max-width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .customer-review-slider {
+    .section-body-header {
+      .prefix {
+        font-size: 14px;
+      }
+
+      .heading {
+        font-size: 22px;
+      }
+    }
+
+    .customer-card-section {
+      .card-row {
+        grid-gap: 2%;
+      }
+
+      .review-card {
+        padding: 2px !important;
+        text-align: center;
+        grid-gap: 4px !important;
+
+        .cust-image {
+          width: 40px !important;
+          height: 40px !important;
+        }
+
+        .comments {
+          font-size: 12px;
+        }
+
+        .customer-name {
+          font-size: 12px !important;
+        }
+
+        .rating {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    .footer-menu-row {
+      flex-wrap: wrap;
+
+      .nav-item {
+        font-size: 14px;
+      }
+
+      .logo-medihost {
+        order: 1;
+        width: 50%;
+      }
+
+      .connect-with-parent {
+        order: 1;
+        width: 50%;
+      }
+
+      .nav-link-items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 100%;
+        order: 3;
+      }
+
+      .nav-item {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .check-more-btn,
+  .connect-with-btn {
+    font-size: 12px;
   }
 }
