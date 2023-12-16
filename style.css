@@ -19,6 +19,96 @@ body {
   padding: 0;
 }
 
+/* COMMON ELEMENTS */
+.check-more-parent,
+.connect-with-parent {
+  margin-top: 24px;
+  display: flex;
+  justify-content: end;
+}
+
+.connect-with-btn,
+.check-more-btn {
+  padding: 10px 20px;
+  background-color: #0E8C3B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.check-more-btn:hover {
+  background-color: #0C642B;
+}
+
+.connect-with-btn {
+  background-color: #FF0000;
+}
+
+.connect-with-btn:hover {
+  background-color: #CF1010;
+}
+
+.section-header {
+  margin-bottom: 24px;
+
+  .prefix {
+    color: #0E8C3B;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .heading {
+    margin-top: 10px;
+    color: #252B42;
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
+
+.hospital-card {
+  display: flex;
+  justify-content: space-between;
+
+  .hospital-card-body {
+    padding: 20px;
+    width: 238px;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+
+    .hospital-card-img {
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .hospital-card-title {
+      color: #252B42;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .hospital-border {
+      margin: 10px 0;
+      border: 1px solid #5FA0D8;
+      width: 70%;
+    }
+
+    .hospital-address {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .hospital-card-body:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.4);
+    transition: 0.2s;
+    transform: scale(102%);
+  }
+}
+
 .hover-link:hover {
   cursor: pointer;
   color: rgb(223, 131, 146)
@@ -50,6 +140,10 @@ body {
     text-decoration: dnone;
   }
 
+  .connect-with-parent {
+    margin-top: 0;
+  }
+
   ul {
     list-style: none;
   }
@@ -63,6 +157,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-item {
@@ -71,13 +168,6 @@ body {
     font-weight: 600;
   }
 
-
-  .nav-link-items {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
 
   .nav-link-items li {
     margin-right: 20px;
@@ -120,6 +210,7 @@ body {
   cursor: pointer;
 }
 
+
 .main-landing-page {
   position: relative;
   top: 80px;
@@ -128,6 +219,8 @@ body {
   background-size: cover;
 
   .text-section {
+    margin: auto;
+    max-width: 1260px;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -140,32 +233,11 @@ body {
 }
 
 
-
-
-#company-info h2 {
-  text-align: center;
-  background: url('your-background-image.jpg') center/cover no-repeat;
-  color: rgb(26, 17, 17);
-  font-size: 60px
-}
-
-#company-info p {
-  text-align: center;
-  background: url('your-background-image.jpg') center/cover no-repeat;
-  color: rgb(73, 61, 61);
-  font-size: 25px
-}
-
-
-
-
-
-
 /* Welcome to MediHost */
 .welcome-to-medihost {
   background-color: #f2f2f2;
   align-items: center;
-  padding: 56px;
+  padding: 100px 56px 56px;
 
   .welcome-container {
     margin: auto;
@@ -257,8 +329,6 @@ body {
     }
   }
 }
-
-
 
 /* We are best */
 .we-are-best {
@@ -745,6 +815,42 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: dnone;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    .connect-with-parent {
+      margin-top: 0;
+    }
+
+    .nav-link-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .nav-link-items li {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
   }
 
   .line-separator {
@@ -766,95 +872,5 @@ body {
     img:hover {
       cursor: pointer;
     }
-  }
-}
-
-/* COMMON ELEMENTS */
-.check-more-parent,
-.connect-with-parent {
-  margin-top: 24px;
-  display: flex;
-  justify-content: end;
-}
-
-.connect-with-btn,
-.check-more-btn {
-  padding: 10px 20px;
-  background-color: #0E8C3B;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.check-more-btn:hover {
-  background-color: #0C642B;
-}
-
-.connect-with-btn {
-  background-color: #FF0000;
-}
-
-.connect-with-btn:hover {
-  background-color: #CF1010;
-}
-
-.section-header {
-  margin-bottom: 24px;
-
-  .prefix {
-    color: #0E8C3B;
-    font-weight: 600;
-    font-size: 20px;
-  }
-
-  .heading {
-    margin-top: 10px;
-    color: #252B42;
-    font-weight: 600;
-    font-size: 40px;
-  }
-}
-
-.hospital-card {
-  display: flex;
-  justify-content: space-between;
-
-  .hospital-card-body {
-    padding: 20px;
-    width: 238px;
-    display: flex;
-    border-radius: 4px;
-    flex-direction: column;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
-
-    .hospital-card-img {
-      margin-bottom: 20px;
-      border-radius: 4px;
-    }
-
-    .hospital-card-title {
-      color: #252B42;
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    .hospital-border {
-      margin: 10px 0;
-      border: 1px solid #5FA0D8;
-      width: 70%;
-    }
-
-    .hospital-address {
-      font-size: 16px;
-      font-weight: 400;
-    }
-  }
-
-  .hospital-card-body:hover {
-    cursor: pointer;
-    box-shadow: 0 3px 6px rgb(0 0 0 / 0.4);
-    transition: 0.2s;
-    transform: scale(102%);
   }
 }
