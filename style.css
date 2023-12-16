@@ -474,6 +474,8 @@ ul {
   }
 
   .content-part {
+    margin-top: 50px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -510,6 +512,29 @@ ul {
       font-size: 18px;
       color: #04091B;
       margin-bottom: 30px;
+    }
+
+    .list-of-feature {
+      display: flex;
+      flex-direction: column;
+
+      .row-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 70%;
+        margin-bottom: 12px;
+
+        .col-one {
+          display: flex;
+          align-items: center;
+        }
+
+        .mark-tick {
+          margin-right: 10px;
+        }
+      }
     }
   }
 }
