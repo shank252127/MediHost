@@ -1,0 +1,270 @@
+.form-group div {
+    position: relative;
+    }
+    .autocomplete-items {
+    position: absolute !important;
+    height: auto;
+    max-height: 240px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+    padding: 10px;
+    }
+    /* Custom CSS */
+    #search-suggestions-mobile{top:32px !important;}
+    .doctor-city-filter li.dropdown:hover ul {
+    display: block !important;
+    }
+    @media    only screen and (max-width: 768px)
+    {
+    .hospitalSearchBox2 {
+    margin-top: 5px;
+    position: relative;
+    }
+    }
+    /* For footer side video */
+    .vd-lg-wise .nav-tabs {
+    border: none;
+    }
+    .vd-lg-wise .newsrowHeading{
+    color: #333;
+    margin-top: 10px;
+    }
+    .vd-lg-wise .nav-tabs > li.active > a{
+    background-color: unset;
+    border: 0;
+    border-bottom-color: unset;
+    display: none;
+    }
+    .vd-lg-wise .nav-tabs   {
+    text-align: left;
+    }
+    .vd-lg-wise .nav-tabs {
+    text-align: left;
+    margin-bottom: 30px;
+    }
+    .vd-lg-wise .nav > li > a {
+    padding: 0px 5px;
+    }
+    ul#bottomNav, ul#bottomSocial {
+    padding: 10px 20px;
+    margin: 0;
+    }
+    ul#bottomNav li:after {
+    border-right: 1px solid #fff;
+    content: '';
+    position: relative;
+    right: -10px;
+    }
+    ul#bottomNav li:last-child:after {
+    border-right: unset;
+    }
+    #bottomNav>li {
+    line-height: 150%;
+    font-size: 18px;
+    } 
+  .top-display-banner span {
+    background: #bee1fb;
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 630px;
+    width:100%;
+    }
+    .top-display-banner img {
+    width: 200px; height:auto;
+    }
+    .top-display-banner p {
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+    line-height: 0.5;
+    font-size: 16px;
+    margin-bottom: 0;
+    }
+    .top-display-banner p strong {
+    font-size: 21px;
+    }
+    .top-display-banner a{text-decoration:underline;}
+    @media  only screen and (min-width: 769px){
+    .language-band{height: 50px;}
+    /* h6.register{display:none;} */
+    .top-display-banner span{margin-left: -30px;border-radius: 0px 0px 10px 0px;}
+    }
+    @media  screen and (max-width: 769px){
+    .language-band {display: block !important;height: auto !important;}
+    .select-lang {float: right !important;}
+    /* .language-band{height: 90px !important;display: flex;align-items: flex-end;flex-direction: column;} */
+    .top-display-banner{padding-left: 0; padding-right: 0;}
+    .top-display-banner span{border-radius: 0 0 10px 10px;max-width: unset;height: 75px;}
+    h6.register{max-width: 198px;display: block;padding:5px;}
+    .top-display-banner img {width: 148px;}
+    .top-display-banner p{font-size: 14px;padding-left: 10px;}
+    .top-display-banner p strong {font-size: 18px;}
+    }
+    @media  screen and (max-width: 530px){
+    .top-display-banner span{height: 96px;}
+    div#google_translate_element {
+    padding: 5px;
+    }
+    .top-display-banner span p br, p.gt-block br {
+    display: none;
+    }
+    .top-display-banner strong {
+    display: flex;margin-bottom: 10px;
+    }
+    .top-display-banner p {
+    line-height: 1;
+    }
+    }
+    /* affordable-package */
+    .affordable-package {
+    padding: 15px 20px 15px;
+    background: #eee;
+    /* border: 2px dashed #3397df; */
+    margin-bottom: 50px;
+    }
+    .paxkage-heading {
+    color: #337ab7;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .handpic-item {
+    padding: 10px;
+    text-align: center;
+    }
+    .handpic-item a {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background: #fefefe;
+    min-height: 96px;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    }
+    div#lpageData .owl-nav{
+    display: block !important;
+    }
+    #lpageData .owl-nav button {
+    position: absolute;
+    top: calc(50% - 28px);
+    top: -webkit-calc(50% - 28px);
+    }
+    #lpageData .owl-nav .owl-prev {
+    left: -15px;
+    }
+    #lpageData .owl-nav .owl-next {
+    right: -15px;
+    }
+    /* Affordable package End */
+    .col-sm-12.col-md-12.col-xs-12.slick-slide {
+    padding: 10px;
+    text-align: center;
+    }
+    .doctor-city-filter li.dropdown:hover ul {
+    display: block !important;
+    }
+    /* Add Css for circular form */
+    .dynamic_content {
+    background: #061c50;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    }
+    section .panel {
+    background: unset;
+    border: 0;
+    }
+    .dynamic_content button.btn.online-consult-button {
+    background-color: #ff0e0e!important;
+    background-image: unset !important;
+    font-size: 20px !important;
+    border: 0;
+    font-weight: 600;
+    transition: all .2s ease-out;
+    padding: 10px 80px;
+    border-radius: 11px !important;
+    box-shadow: 1px 1px 3px #ccc;
+    -moz-box-shadow: 1px 1px 3px #ccc;
+    -webkit-box-shadow: 1px 1px 3px #ccc;
+    -ms-box-shadow: 1px 1px 3px #ccc;
+    -o-box-shadow: 1px 1px 3px #ccc;
+    }
+    label.control-label.col-sm-12 {
+    text-align: left;
+    }
+    .dynamic_content .form-control:focus, textarea:focus-visible {
+    border-color: #66afe9 !important;
+    outline: 0 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%) !important;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%) !important;
+    }
+    textarea:focus-visible {
+    outline-offset: 0px !important;
+    }
+    .dynamic_content  .form-group label {
+    font-size: 18px !important;}
+    /* wtsapp chat css */
+    span.doc-chat-list {
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    }
+    span.doc-chat-list img {
+    border: 0px !important;
+    width: 42px !important;
+    margin-top: -5px;
+    }
+    /*  */
+    .col-xs-6.language-band.register {
+    display: block !important;
+    }
+    @media    screen and (max-width:768px) 
+    {
+    span.doc-chat-list {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    }
+    input#phone_number {
+    width: 75% !important;
+    }
+    input#country_phone_code {
+    width: 25% !important;
+    }
+    }
+    @media  only screen and (max-width: 768px){
+    #search-suggestions-mobile {
+    top: 162px !important;
+    }
+    .hide-for-mobile {
+    display: none !important;
+    }
+    .mobileInputGroupHospital {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    margin-top: 0px;
+    background: #fff;
+    height: 100%;
+    z-index: 2;
+    }
+    #search-suggestions-mobile {
+    top: 46px !important;
+    height: 80%;
+    }
+    nav ol.breadcrumb {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 0;
+    }
+    }
