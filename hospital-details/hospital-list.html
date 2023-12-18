@@ -32,7 +32,7 @@
          <div class="hover_bkgr_friccew" id="hover_bkgr_friccew">
             <div>
                <div class="filterCloseButton" onclick="if (!window.__cfRLUnblockHandlers) return false; closeMobViewFilter()" data-cf-modified-04d5dadbaedc5466618bce0f->X</div>
-               <!-- <a title="Reset Filter" href="https://www.vaidam.com/hospitals">Reset Filter <i class="fa fa-close" aria-hidden="true"></i> </a>  -->
+               <!-- <a title="Reset Filter" href="#">Reset Filter <i class="fa fa-close" aria-hidden="true"></i> </a>  -->
                <div id="accordion">
                   <h3 class="sidebar-heading"> By Country </h3>
                   <ul id="MobSearch-By-Country">
@@ -348,12 +348,12 @@
       </div>
       <div class="view-content">
       <div class="item-list">
-      <ul class="mob-padding">
+      <ul id="hospital-container" class="mob-padding">
       <li class="views-row views-row-1 views-row-odd views-row-first">
          <div class="list-card hospDep_2522">
             <div class="list-card-row">
                <div class="list-card-media object-grid-Dimg">
-                  <a href="#" title="Indraprastha Apollo Hospital, New Delhi"> <img alt="Indraprastha Apollo Hospital, New Delhi" title="#!" title="Whatsapp Chat"><span class="doc-chat-list"><img src="https://www.vaidam.com/assets/v2/images/svg/icons8-whatsapp.svg" width="32" height="32" alt="Whatsapp Chat" title="Whatsapp Chat"> Chat</span></a> 
+                  <a href="#" title="Indraprastha Apollo Hospital, New Delhi"> <img alt="Indraprastha Apollo Hospital, New Delhi" title="#" title="Whatsapp Chat"><span class="doc-chat-list"><img src="https://www.vaidam.com/assets/v2/images/svg/icons8-whatsapp.svg" width="32" height="32" alt="Whatsapp Chat" title="Whatsapp Chat"> Chat</span></a> 
                   <div class="mobile-heading"> <span class="inlineblock left"></span> </div>
                </div>
                <div class="list-card-info">
@@ -399,5 +399,123 @@
       <div class="dynamic_content">
       <div class="main_container">
       <style type="text/css"> .primary-form{background-color: #f7f7f7;}</style>
+
+      <div class="login-container">
+         <h2 style="text-align: center;">Help Us With Patient Details</h2>
+         <form>
+             <div class="form-group">
+                 <label for="username">Name<span style="color: red;">*</span></label>
+                 <input type="text" id="username" name="username"placeholder="Patient Name" required>
+             </div>
+             <div class="form-group">
+                 <label for="Email">Email<span style="color: red;">*</span></label>
+                 <input type="email" id="email" name="email"placeholder="Enter email" required>
+             </div>
+             <div class="form-group">
+                 <label for="Phone-Number">Phone Number<span style="color: red;">*</span></label>
+                 <input type="tel" id="phone" name="phone"placeholder="Your Phone number" required>
+             </div>
+             <div class="form-group">
+                 <label for="Phone-Number">City<span style="color: red;">*</span></label>
+                 <input type="text" id="text" name="city"placeholder="Enter City" required>
+             </div>
+             <div class="form-group">
+                 <label for="Email">Description<span style="color: red;">*</span></label>
+                 <textarea id="description" name="description" placeholder="Describe The Current Medical Problem"
+                     required></textarea>
+             </div>
+             <div class="form-group">
+                 <label for="Patient">Patient's Age or Date Of Birth<span style="color: red;">*</span></label>
+                 <input type="text" id="text" name="city"placeholder="Enter City" required>
+             </div>
+             
+             <button type="submit">SUBMIT</button>
+             <p class="conditions">By submitting the form I agree to the Terms of Use and Privacy Policy of Vaidam Health</p>
+ 
+         </form>
+         
+     </div>
+
+     <script>
+      // Dummy data for hospitals
+const hospitals = [
+  {
+    name: 'Hospital A',
+    location: 'Location A',
+    established: 2000,
+    beds: 500,
+    specialties: 'Specialty A, Specialty B, Specialty C',
+    description: 'Description of Hospital A'
+  },
+  {
+    name: 'Hospital B',
+    location: 'Location B',
+    established: 1995,
+    beds: 700,
+    specialties: 'Specialty D, Specialty E, Specialty F',
+    description: 'Description of Hospital B'
+  },
+  {
+    name: 'Hospital C',
+    location: 'Location C',
+    established: 2010,
+    beds: 1000,
+    specialties: 'Specialty G, Specialty H, Specialty I',
+    description: 'Description of Hospital C'
+  },
+  {
+    name: 'Hospital D',
+    location: 'Location D',
+    established: 2005,
+    beds: 600,
+    specialties: 'Specialty J, Specialty K, Specialty L',
+    description: 'Description of Hospital D'
+  },
+  {
+    name: 'Hospital E',
+    location: 'Location E',
+    established: 1990,
+    beds: 800,
+    specialties: 'Specialty M, Specialty N, Specialty O',
+    description: 'Description of Hospital E'
+  }
+];
+
+// Function to render hospital data
+function renderHospitals(data) {
+  const container = document.getElementById('hospital-container');
+  
+  data.forEach((hospital, index) => {
+    const hospitalTemplate = `
+      <div class="list-card hospDep_${index}">
+        <!-- ... (The rest of the provided HTML template) ... -->
+        <h2 class="primary-heading-md">
+          <a href="#" title="${hospital.name}">${hospital.name}</a>
+        </h2>
+        <span class="secondary-heading-md hospital-subtext clearfix">
+          <i class="fa fa-map-marker" title="${hospital.location}"></i>
+          ${hospital.location}
+        </span>
+        <span class="secondary-heading-md hospital-subtext clearfix">
+          <i class="fa fa-hospital-o" title="Established in ${hospital.established}"></i>
+          Established in : <span class="font-bold">${hospital.established}</span>
+        </span>
+        <span class="secondary-heading-md hospital-subtext clearfix">
+          <i class="fa fa-bed" title="Number of Beds ${hospital.beds}"></i>
+          Number of Beds : <span class="font-bold">${hospital.beds}</span>
+        </span>
+        <!-- ... (Rest of the HTML using hospital data) ... -->
+      </div>
+    `;
+    
+    container.innerHTML += hospitalTemplate;
+  });
+}
+
+// Call the function to render hospitals
+renderHospitals(hospitals);
+
+     </script>
+     
       </body> 
 </html>
