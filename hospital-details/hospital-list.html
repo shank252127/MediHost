@@ -1,42 +1,171 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-   <head>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" href="hospital-list.css" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-      <title>hospital-list</title>
-      <link rel="canonical" href="#" />
-      <link rel="next" href="#" />
-      <link rel="profile" href="#" />
-      <link rel="shortcut icon" href="https://www.vaidam.com/sites/default/files/favicon_2.png" type="image/png" />
-      <link rel="stylesheet" type="text/css" href="https://www.vaidam.com/assets/newui/css/font-awesome.min.css" />
-      <link rel="stylesheet" type="text/css" href="https://www.vaidam.com/assets/css/bootstrap.css" />
-      <link rel="stylesheet" type="text/css" href="https://www.vaidam.com/assets/css/list_page.css" />
-      <link href="https://www.vaidam.com/assets/v2/css/merge-common.css" rel="stylesheet" />
-      <style type="text/css">  
-      </style>
-      <!-- <div id="main" class="common-filter" style="display:block;"> -->
-      <!-- <div class="clearfix"> -->
-      <div class="container newFilter-container">
+<head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" href="hospital-list.css" />
+
+   <title>hospital-list</title>
+   <link rel="canonical" href="#" />
+   <link rel="next" href="#" />
+   <link rel="profile" href="#" />
+   <link rel="shortcut icon" href="https://www.vaidam.com/sites/default/files/favicon_2.png" type="image/png" />
+   <link rel="stylesheet" type="text/css" href="https://www.vaidam.com/assets/newui/css/font-awesome.min.css" />
+   <link rel="stylesheet" type="text/css" href="https://www.vaidam.com/assets/css/bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="https://www.vaidam.com/assets/css/list_page.css" />
+   <link href="https://www.vaidam.com/assets/v2/css/merge-common.css" rel="stylesheet" />
+   <style type="text/css">
+   </style>
+   <!-- <div id="main" class="common-filter" style="display:block;"> -->
+   <!-- <div class="clearfix"> -->
+   <div class="container newFilter-container">
       <div class="clearfix data-container mob-pad0-top">
-      <nav aria-label="breadcrumb">
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Hospitals</a></li>
-            <li class="breadcrumb-item"><a href="#">India</a></li>
-         </ol>
-      </nav>
-      <!-- <div class="row"> -->
-      <div class="col-sm-4 col-md-3 col-xs-12">
-         <div class="hover_bkgr_friccew" id="hover_bkgr_friccew">
-            <div>
-               <div class="filterCloseButton" onclick="if (!window.__cfRLUnblockHandlers) return false; closeMobViewFilter()" data-cf-modified-04d5dadbaedc5466618bce0f->X</div>
-               <!-- <a title="Reset Filter" href="#">Reset Filter <i class="fa fa-close" aria-hidden="true"></i> </a>  -->
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">Home</a></li>
+               <li class="breadcrumb-item"><a href="#">Hospitals</a></li>
+               <li class="breadcrumb-item"><a href="#">India</a></li>
+            </ol>
+         </nav>
+         <!-- <div class="row"> -->
+         <div class="col-sm-4 col-md-3 col-xs-12">
+            <div class="hover_bkgr_friccew" id="hover_bkgr_friccew">
+               <div>
+                  <div class="filterCloseButton"
+                     onclick="if (!window.__cfRLUnblockHandlers) return false; closeMobViewFilter()"
+                     data-cf-modified-04d5dadbaedc5466618bce0f->X</div>
+                  <!-- <a title="Reset Filter" href="#">Reset Filter <i class="fa fa-close" aria-hidden="true"></i> </a>  -->
+                  <div id="accordion">
+                     <h3 class="sidebar-heading"> By Country </h3>
+                     <ul id="MobSearch-By-Country">
+                        <li> <a href="#" title="India">India</a> </li>
+                        <li> <a href="#" title="Turkey(79)">Turkey(79)</a> </li>
+                        <li> <a href="#" title="United Arab Emirates(55)">United Arab Emirates(55)</a> </li>
+                        <li> <a href="#" title="Thailand(47)">Thailand(47)</a> </li>
+                        <li> <a href="#" title="Germany(40)">Germany(40)</a> </li>
+                        <li> <a href="#" title="South Africa(33)">South Africa(33)</a> </li>
+                        <li> <a href="#" title="South Korea(31)">South Korea(31)</a> </li>
+                        <li> <a href="#" title="Tunisia(30)">Tunisia(30)</a> </li>
+                        <li> <a href="#" title="Malaysia(29)">Malaysia(29)</a> </li>
+                        <li> <a href="#" title="Egypt(21)">Egypt(21)</a> </li>
+                        <li> <a href="#" title="Switzerland(17)">Switzerland(17)</a> </li>
+                        <li> <a href="#" title="Poland(16)">Poland(16)</a> </li>
+                        <li> <a href="#" title="Israel(16)">Israel(16)</a> </li>
+                        <li> <a href="#" title="Czech Republic(15)">Czech Republic(15)</a> </li>
+                        <li> <a href="#" title="Singapore(15)">Singapore(15)</a> </li>
+                        <li> <a href="#" title="Austria(15)">Austria(15)</a> </li>
+                        <li> <a href="#" title="Lithuania(12)">Lithuania(12)</a> </li>
+                        <li> <a href="#" title="Spain(10)">Spain(10)</a> </li>
+                        <li> <a href="#" title="France(10)">France(10)</a> </li>
+                        <li> <a href="#" title="Cyprus(2)">Cyprus(2)</a> </li>
+                     </ul>
+                     <h3 class="sidebar-heading"> By City </h3>
+                     <div class="sidebar-typo"> <input type="text" name="By-City" id="By-City-InputMob"
+                           onkeyup="if (!window.__cfRLUnblockHandlers) return false; mobFilterSearchFunction(this.name)"
+                           placeholder="Search By City.." title="Type in a name"
+                           data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
+                     <ul id="MobSearch-By-City">
+                        <li> <a href="#" title="New Delhi(70)">New Delhi(70)</a> </li>
+                        <li> <a href="#" title="Hyderabad(44)">Hyderabad(44)</a> </li>
+                        <li> <a href="#" title="Bangalore(43)">Bangalore(43)</a> </li>
+                        <li> <a href="#" title="Chennai(39)">Chennai(39)</a> </li>
+                        <li> <a href="#" title="Mumbai(37)">Mumbai(37)</a> </li>
+                        <li> <a href="#" title="Gurgaon(35)">Gurgaon(35)</a> </li>
+                        <li> <a href="#" title="Pune(27)">Pune(27)</a> </li>
+                        <li> <a href="#" title="Kolkata(19)">Kolkata(19)</a> </li>
+                        <li> <a href="#" title="Nagpur(16)">Nagpur(16)</a> </li>
+                        <li> <a href="#" title="Ahmedabad(12)">Ahmedabad(12)</a> </li>
+                        <li> <a href="#" title="Lucknow(10)">Lucknow(10)</a> </li>
+                        <li> <a href="#" title="Noida(10)">Noida(10)</a> </li>
+                        <li> <a href="#" title="Jaipur(9)">Jaipur(9)</a> </li>
+                        <li> <a href="#" title="Indore(7)">Indore(7)</a> </li>
+                        <li> <a href="#" title="Visakhapatnam(6)">Visakhapatnam(6)</a> </li>
+                        <li> <a href="#" title="Meerut(5)">Meerut(5)</a> </li>
+                        <li> <a href="#" title="Amritsar(5)">Amritsar(5)</a> </li>
+                        <li> <a href="#" title="Aurangabad(5)">Aurangabad(5)</a> </li>
+                        <li> <a href="#" title="Faridabad(5)">Faridabad(5)</a> </li>
+                        <li> <a href="#" title="Kochi(4)">Kochi(4)</a> </li>
+                        <li> <a href="#" title="Nashik(4)">Nashik(4)</a> </li>
+                        <li> <a href="#" title="Surat(3)">Surat(3)</a> </li>
+                        <li> <a href="#" title="Vadodara(3)">Vadodara(3)</a> </li>
+                        <li> <a href="#" title="Varanasi(3)">Varanasi(3)</a> </li>
+                        <li> <a href="#" title="Vijayawada(3)">Vijayawada(3)</a> </li>
+                        <li> <a href="#" title="Ahmednagar(3)">Ahmednagar(3)</a> </li>
+                        <li> <a href="#" title="Ghaziabad(3)">Ghaziabad(3)</a> </li>
+                        <li> <a href="#" title="Solapur(2)">Solapur(2)</a> </li>
+                        <li> <a href="#" title="Kanpur(2)">Kanpur(2)</a> </li>
+                        <li> <a href="#" title="Thiruvananthapuram(2)">Thiruvananthapuram(2)</a> </li>
+                        <li> <a href="#" title="Ludhiana(2)">Ludhiana(2)</a> </li>
+                        <li> <a href="#" title="Calicut(2)">Calicut(2)</a> </li>
+                        <li> <a href="#" title="Chandigarh(2)">Chandigarh(2)</a> </li>
+                        <li> <a href="#" title="Coimbatore(2)">Coimbatore(2)</a> </li>
+                        <li> <a href="#" title="Patna(2)">Patna(2)</a> </li>
+                        <li> <a href="#" title="Haridwar(1)">Haridwar(1)</a> </li>
+                        <li> <a href="#" title="Ranchi(1)">Ranchi(1)</a> </li>
+                        <li> <a href="#" title="Rewari(1)">Rewari(1)</a> </li>
+                        <li> <a href="#" title="Secunderabad(1)">Secunderabad(1)</a> </li>
+                        <li> <a href="#" title="Siliguri(1)">Siliguri(1)</a> </li>
+                        <li> <a href="#" title="Jamnagar(1)">Jamnagar(1)</a> </li>
+                        <li> <a href="#" title="Jodhpur(1)">Jodhpur(1)</a> </li>
+                        <li> <a href="#" title="Srikakulam(1)">Srikakulam(1)</a> </li>
+                        <li> <a href="#" title="Kalinganagar(1)">Kalinganagar(1)</a> </li>
+                        <li> <a href="#" title="Karimnagar(1)">Karimnagar(1)</a> </li>
+                        <li> <a href="#" title="Udaipur(1)">Udaipur(1)</a> </li>
+                        <li> <a href="#" title="Kurnool(1)">Kurnool(1)</a> </li>
+                        <li> <a href="#" title="Agra(1)">Agra(1)</a> </li>
+                        <li> <a href="#" title="Mansoorabad(1)">Mansoorabad(1)</a> </li>
+                        <li> <a href="#" title="Mathura(1)">Mathura(1)</a> </li>
+
+                        <h3 class="sidebar-heading"> By Department </h3>
+                        <div class="sidebar-typo"> <input type="text" name="By-Department" id="By-Department-InputMob"
+                              onkeyup="if (!window.__cfRLUnblockHandlers) return false; mobFilterSearchFunction(this.name)"
+                              placeholder="Search By Department.." title="Type in a name"
+                              data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
+                        <ul id="MobSearch-By-Department">
+                           <li> <a href="#" title="CARDIOLOGY AND CARDIAC SURGERY(185)">CARDIOLOGY AND CARDIAC
+                                 SURGERY(185)</a> </li>
+                           <li> <a href="#" title="COSMETIC AND PLASTIC SURGERY(121)">COSMETIC AND PLASTIC
+                                 SURGERY(121)</a> </li>
+                           <li> <a href="#" title="DENTAL TREATMENT(110)">DENTAL TREATMENT(110)</a> </li>
+                           <li> <a href="#" title="DERMATOLOGY(121)">DERMATOLOGY(121)</a> </li>
+                           <li> <a href="#" title="ENDOCRINOLOGY(111)">ENDOCRINOLOGY(111)</a> </li>
+                           <li> <a href="#" title="ENT SURGERY(111)">ENT SURGERY(111)</a> </li>
+                           <li> <a href="#" title="GASTROENTEROLOGY(111)">GASTROENTEROLOGY(111)</a> </li>
+                           <li> <a href="#" title="GENERAL SURGERY(111)">GENERAL SURGERY(111)</a> </li>
+                           <li> <a href="#" title="GYNECOLOGY(116)">GYNECOLOGY(116)</a> </li>
+                           <li> <a href="#" title="HEMATOLOGY(117)">HEMATOLOGY(117)</a> </li>
+                           <li> <a href="#" title="HEPATOLOGY(101)">HEPATOLOGY(101)</a> </li>
+                           <li> <a href="#" title="IVF and INFERTILITY(116)">IVF and INFERTILITY(116)</a> </li>
+                           <li> <a href="#" title="NEPHROLOGY(111)">NEPHROLOGY(111)</a> </li>
+                           <li> <a href="#" title="NEUROLOGY AND NEUROSURGERY(119)">NEUROLOGY AND NEUROSURGERY(119)</a>
+                           </li>
+                           <li> <a href="#" title="OBESITY OR BARIATRIC SURGERY(111)">OBESITY OR BARIATRIC
+                                 SURGERY(111)</a> </li>
+                           <li> <a href="#" title="ONCOLOGY AND ONCOSURGERY(118)">ONCOLOGY AND ONCOSURGERY(118)</a>
+                           </li>
+                           <li> <a href="#" title="OPTHALMOLOGY(106)">OPTHALMOLOGY(106)</a> </li>
+                           <li> <a href="#" title="ORTHOPEDICS(111)">ORTHOPEDICS(111)</a> </li>
+                           <li> <a href="#" title="PEDIATRIC CARDIOLOGY(103)">PEDIATRIC CARDIOLOGY(103)</a> </li>
+                           <li> <a href="#" title="PEDIATRICS AND PEDIATRIC SURGERY(112)">PEDIATRICS AND PEDIATRIC
+                                 SURGERY(112)</a> </li>
+                           <li> <a href="#" title="PULMONOLOGY(111)">PULMONOLOGY(111)</a> </li>
+                           <li> <a href="#" title="RHEUMATOLOGY(111)">RHEUMATOLOGY(111)</a> </li>
+                           <li> <a href="#" title="SPINE SURGERY(111)">SPINE SURGERY(111)</a> </li>
+                           <li> <a href="#" title="TRANSPLANT SURGERY(111)">TRANSPLANT SURGERY(111)</a> </li>
+                           <li> <a href="#" title="UROLOGY TREATMENT(125)">UROLOGY TREATMENT(125)</a> </li>
+                           <li> <a href="#" title="VASCULAR SURGERY(111)">VASCULAR SURGERY(111)</a> </li>
+                        </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="clearfix filter-panel sidebar-main">
+               <a title="Reset Filter" href="#" style="float:right;">Reset Filter <i class="fa fa-close"
+                     aria-hidden="true"></i> </a>
                <div id="accordion">
                   <h3 class="sidebar-heading"> By Country </h3>
-                  <ul id="MobSearch-By-Country">
-                     <li> <a href="#" title="India">India</a> </li>
+                  <ul id="Search-By-Country">
+                     <li> <a href="#" title="India(476)">India(476)</a> </li>
                      <li> <a href="#" title="Turkey(79)">Turkey(79)</a> </li>
                      <li> <a href="#" title="United Arab Emirates(55)">United Arab Emirates(55)</a> </li>
                      <li> <a href="#" title="Thailand(47)">Thailand(47)</a> </li>
@@ -58,8 +187,11 @@
                      <li> <a href="#" title="Cyprus(2)">Cyprus(2)</a> </li>
                   </ul>
                   <h3 class="sidebar-heading"> By City </h3>
-                  <div class="sidebar-typo"> <input type="text" name="By-City" id="By-City-InputMob" onkeyup="if (!window.__cfRLUnblockHandlers) return false; mobFilterSearchFunction(this.name)" placeholder="Search By City.." title="Type in a name" data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
-                  <ul id="MobSearch-By-City">
+                  <div class="sidebar-typo"> <input type="text" name="By-City" id="By-City-Input"
+                        onkeyup="if (!window.__cfRLUnblockHandlers) return false; desktopFilterSearchFunction(this.name)"
+                        placeholder="Search By City.." title="Type in a name"
+                        data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
+                  <ul id="Search-By-City">
                      <li> <a href="#" title="New Delhi(70)">New Delhi(70)</a> </li>
                      <li> <a href="#" title="Hyderabad(44)">Hyderabad(44)</a> </li>
                      <li> <a href="#" title="Bangalore(43)">Bangalore(43)</a> </li>
@@ -110,383 +242,363 @@
                      <li> <a href="#" title="Agra(1)">Agra(1)</a> </li>
                      <li> <a href="#" title="Mansoorabad(1)">Mansoorabad(1)</a> </li>
                      <li> <a href="#" title="Mathura(1)">Mathura(1)</a> </li>
-                    
+
+                  </ul>
                   <h3 class="sidebar-heading"> By Department </h3>
-                  <div class="sidebar-typo"> <input type="text" name="By-Department" id="By-Department-InputMob" onkeyup="if (!window.__cfRLUnblockHandlers) return false; mobFilterSearchFunction(this.name)" placeholder="Search By Department.." title="Type in a name" data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
-                  <ul id="MobSearch-By-Department">
-                     <li> <a href="#" title="CARDIOLOGY AND CARDIAC SURGERY(185)">CARDIOLOGY AND CARDIAC SURGERY(185)</a> </li>
-                     <li> <a href="#" title="COSMETIC AND PLASTIC SURGERY(121)">COSMETIC AND PLASTIC SURGERY(121)</a> </li>
-                     <li> <a href="#" title="DENTAL TREATMENT(110)">DENTAL TREATMENT(110)</a> </li>
-                     <li> <a href="#" title="DERMATOLOGY(121)">DERMATOLOGY(121)</a> </li>
-                     <li> <a href="#" title="ENDOCRINOLOGY(111)">ENDOCRINOLOGY(111)</a> </li>
-                     <li> <a href="#" title="ENT SURGERY(111)">ENT SURGERY(111)</a> </li>
-                     <li> <a href="#" title="GASTROENTEROLOGY(111)">GASTROENTEROLOGY(111)</a> </li>
-                     <li> <a href="#" title="GENERAL SURGERY(111)">GENERAL SURGERY(111)</a> </li>
-                     <li> <a href="#" title="GYNECOLOGY(116)">GYNECOLOGY(116)</a> </li>
-                     <li> <a href="#" title="HEMATOLOGY(117)">HEMATOLOGY(117)</a> </li>
-                     <li> <a href="#" title="HEPATOLOGY(101)">HEPATOLOGY(101)</a> </li>
-                     <li> <a href="#" title="IVF and INFERTILITY(116)">IVF and INFERTILITY(116)</a> </li>
-                     <li> <a href="#" title="NEPHROLOGY(111)">NEPHROLOGY(111)</a> </li>
-                     <li> <a href="#" title="NEUROLOGY AND NEUROSURGERY(119)">NEUROLOGY AND NEUROSURGERY(119)</a> </li>
-                     <li> <a href="#" title="OBESITY OR BARIATRIC SURGERY(111)">OBESITY OR BARIATRIC SURGERY(111)</a> </li>
-                     <li> <a href="#" title="ONCOLOGY AND ONCOSURGERY(118)">ONCOLOGY AND ONCOSURGERY(118)</a> </li>
-                     <li> <a href="#" title="OPTHALMOLOGY(106)">OPTHALMOLOGY(106)</a> </li>
-                     <li> <a href="#" title="ORTHOPEDICS(111)">ORTHOPEDICS(111)</a> </li>
-                     <li> <a href="#" title="PEDIATRIC CARDIOLOGY(103)">PEDIATRIC CARDIOLOGY(103)</a> </li>
-                     <li> <a href="#" title="PEDIATRICS AND PEDIATRIC SURGERY(112)">PEDIATRICS AND PEDIATRIC SURGERY(112)</a> </li>
-                     <li> <a href="#" title="PULMONOLOGY(111)">PULMONOLOGY(111)</a> </li>
-                     <li> <a href="#" title="RHEUMATOLOGY(111)">RHEUMATOLOGY(111)</a> </li>
-                     <li> <a href="#" title="SPINE SURGERY(111)">SPINE SURGERY(111)</a> </li>
-                     <li> <a href="#" title="TRANSPLANT SURGERY(111)">TRANSPLANT SURGERY(111)</a> </li>
-                     <li> <a href="#" title="UROLOGY TREATMENT(125)">UROLOGY TREATMENT(125)</a> </li>
-                     <li> <a href="#" title="VASCULAR SURGERY(111)">VASCULAR SURGERY(111)</a> </li>
+                  <div class="sidebar-typo"> <input type="text" name="By-Department" id="By-Department-Input"
+                        onkeyup="if (!window.__cfRLUnblockHandlers) return false; desktopFilterSearchFunction(this.name)"
+                        placeholder="Search By Department.." title="Type in a name"
+                        data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
+                  <ul id="Search-By-Department">
+                     <li> <a href="#">CARDIOLOGY AND CARDIAC SURGERY(185)</a> </li>
+                     <li> <a href="#">COSMETIC AND PLASTIC SURGERY(121)</a> </li>
+                     <li> <a href="#">DENTAL TREATMENT(110)</a> </li>
+                     <li> <a href="#">DERMATOLOGY(121)</a> </li>
+                     <li> <a href="#">ENDOCRINOLOGY(111)</a> </li>
+                     <li> <a href="#">ENT SURGERY(111)</a> </li>
+                     <li> <a href="#">GASTROENTEROLOGY(111)</a> </li>
+                     <li> <a href="#">GENERAL SURGERY(111)</a> </li>
+                     <li> <a href="#">GYNECOLOGY(116)</a> </li>
+                     <li> <a href="#">HEMATOLOGY(117)</a> </li>
+                     <li> <a href="#">HEPATOLOGY(101)</a> </li>
+                     <li> <a href="#">IVF and INFERTILITY(116)</a> </li>
+                     <li> <a href="#">NEPHROLOGY(111)</a> </li>
+                     <li> <a href="#">NEUROLOGY AND NEUROSURGERY(119)</a> </li>
+                     <li> <a href="#">OBESITY OR BARIATRIC SURGERY(111)</a> </li>
+                     <li> <a href="#">ONCOLOGY AND ONCOSURGERY(118)</a> </li>
+                     <li> <a href="#">OPTHALMOLOGY(106)</a> </li>
+                     <li> <a href="#">ORTHOPEDICS(111)</a> </li>
+                     <li> <a href="#">PEDIATRIC CARDIOLOGY(103)</a> </li>
+                     <li> <a href="#">PEDIATRICS AND PEDIATRIC SURGERY(112)</a> </li>
+                     <li> <a href="#">PULMONOLOGY(111)</a> </li>
+                     <li> <a href="#">RHEUMATOLOGY(111)</a> </li>
+                     <li> <a href="#">SPINE SURGERY(111)</a> </li>
+                     <li> <a href="#">TRANSPLANT SURGERY(111)</a> </li>
+                     <li> <a href="#">UROLOGY TREATMENT(125)</a> </li>
+                     <li> <a href="#">VASCULAR SURGERY(111)</a> </li>
+                  </ul>
+               </div>
+               <div class="side-doc-block hide-for-mobile">
+                  <h4 class="sectionSubHeading"> <strong>BEST DOCTORS</strong> </h4>
+                  <ul class="side-doc">
+                     <li><a href="#" title="Best  Doctors in India">Best Doctors in India</a></li>
                   </ul>
                </div>
             </div>
          </div>
-         <div class="clearfix filter-panel sidebar-main">
-            <a title="Reset Filter" href="#" style="float:right;">Reset Filter <i class="fa fa-close" aria-hidden="true"></i> </a> 
-            <div id="accordion">
-               <h3 class="sidebar-heading"> By Country </h3>
-               <ul id="Search-By-Country">
-                  <li> <a href="#" title="India(476)">India(476)</a> </li>
-                  <li> <a href="#" title="Turkey(79)">Turkey(79)</a> </li>
-                  <li> <a href="#" title="United Arab Emirates(55)">United Arab Emirates(55)</a> </li>
-                  <li> <a href="#" title="Thailand(47)">Thailand(47)</a> </li>
-                  <li> <a href="#" title="Germany(40)">Germany(40)</a> </li>
-                  <li> <a href="#" title="South Africa(33)">South Africa(33)</a> </li>
-                  <li> <a href="#" title="South Korea(31)">South Korea(31)</a> </li>
-                  <li> <a href="#" title="Tunisia(30)">Tunisia(30)</a> </li>
-                  <li> <a href="#" title="Malaysia(29)">Malaysia(29)</a> </li>
-                  <li> <a href="#" title="Egypt(21)">Egypt(21)</a> </li>
-                  <li> <a href="#" title="Switzerland(17)">Switzerland(17)</a> </li>
-                  <li> <a href="#" title="Poland(16)">Poland(16)</a> </li>
-                  <li> <a href="#" title="Israel(16)">Israel(16)</a> </li>
-                  <li> <a href="#" title="Czech Republic(15)">Czech Republic(15)</a> </li>
-                  <li> <a href="#" title="Singapore(15)">Singapore(15)</a> </li>
-                  <li> <a href="#" title="Austria(15)">Austria(15)</a> </li>
-                  <li> <a href="#" title="Lithuania(12)">Lithuania(12)</a> </li>
-                  <li> <a href="#" title="Spain(10)">Spain(10)</a> </li>
-                  <li> <a href="#" title="France(10)">France(10)</a> </li>
-                  <li> <a href="#" title="Cyprus(2)">Cyprus(2)</a> </li>
-               </ul>
-               <h3 class="sidebar-heading"> By City </h3>
-               <div class="sidebar-typo"> <input type="text" name="By-City" id="By-City-Input" onkeyup="if (!window.__cfRLUnblockHandlers) return false; desktopFilterSearchFunction(this.name)" placeholder="Search By City.." title="Type in a name" data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
-               <ul id="Search-By-City">
-                  <li> <a href="#" title="New Delhi(70)">New Delhi(70)</a> </li>
-                  <li> <a href="#" title="Hyderabad(44)">Hyderabad(44)</a> </li>
-                  <li> <a href="#" title="Bangalore(43)">Bangalore(43)</a> </li>
-                  <li> <a href="#" title="Chennai(39)">Chennai(39)</a> </li>
-                  <li> <a href="#" title="Mumbai(37)">Mumbai(37)</a> </li>
-                  <li> <a href="#" title="Gurgaon(35)">Gurgaon(35)</a> </li>
-                  <li> <a href="#" title="Pune(27)">Pune(27)</a> </li>
-                  <li> <a href="#" title="Kolkata(19)">Kolkata(19)</a> </li>
-                  <li> <a href="#" title="Nagpur(16)">Nagpur(16)</a> </li>
-                  <li> <a href="#" title="Ahmedabad(12)">Ahmedabad(12)</a> </li>
-                  <li> <a href="#" title="Lucknow(10)">Lucknow(10)</a> </li>
-                  <li> <a href="#" title="Noida(10)">Noida(10)</a> </li>
-                  <li> <a href="#" title="Jaipur(9)">Jaipur(9)</a> </li>
-                  <li> <a href="#" title="Indore(7)">Indore(7)</a> </li>
-                  <li> <a href="#" title="Visakhapatnam(6)">Visakhapatnam(6)</a> </li>
-                  <li> <a href="#" title="Meerut(5)">Meerut(5)</a> </li>
-                  <li> <a href="#" title="Amritsar(5)">Amritsar(5)</a> </li>
-                  <li> <a href="#" title="Aurangabad(5)">Aurangabad(5)</a> </li>
-                  <li> <a href="#" title="Faridabad(5)">Faridabad(5)</a> </li>
-                  <li> <a href="#" title="Kochi(4)">Kochi(4)</a> </li>
-                  <li> <a href="#" title="Nashik(4)">Nashik(4)</a> </li>
-                  <li> <a href="#" title="Surat(3)">Surat(3)</a> </li>
-                  <li> <a href="#" title="Vadodara(3)">Vadodara(3)</a> </li>
-                  <li> <a href="#" title="Varanasi(3)">Varanasi(3)</a> </li>
-                  <li> <a href="#" title="Vijayawada(3)">Vijayawada(3)</a> </li>
-                  <li> <a href="#" title="Ahmednagar(3)">Ahmednagar(3)</a> </li>
-                  <li> <a href="#" title="Ghaziabad(3)">Ghaziabad(3)</a> </li>
-                  <li> <a href="#" title="Solapur(2)">Solapur(2)</a> </li>
-                  <li> <a href="#" title="Kanpur(2)">Kanpur(2)</a> </li>
-                  <li> <a href="#" title="Thiruvananthapuram(2)">Thiruvananthapuram(2)</a> </li>
-                  <li> <a href="#" title="Ludhiana(2)">Ludhiana(2)</a> </li>
-                  <li> <a href="#" title="Calicut(2)">Calicut(2)</a> </li>
-                  <li> <a href="#" title="Chandigarh(2)">Chandigarh(2)</a> </li>
-                  <li> <a href="#" title="Coimbatore(2)">Coimbatore(2)</a> </li>
-                  <li> <a href="#" title="Patna(2)">Patna(2)</a> </li>
-                  <li> <a href="#" title="Haridwar(1)">Haridwar(1)</a> </li>
-                  <li> <a href="#" title="Ranchi(1)">Ranchi(1)</a> </li>
-                  <li> <a href="#" title="Rewari(1)">Rewari(1)</a> </li>
-                  <li> <a href="#" title="Secunderabad(1)">Secunderabad(1)</a> </li>
-                  <li> <a href="#" title="Siliguri(1)">Siliguri(1)</a> </li>
-                  <li> <a href="#" title="Jamnagar(1)">Jamnagar(1)</a> </li>
-                  <li> <a href="#" title="Jodhpur(1)">Jodhpur(1)</a> </li>
-                  <li> <a href="#" title="Srikakulam(1)">Srikakulam(1)</a> </li>
-                  <li> <a href="#" title="Kalinganagar(1)">Kalinganagar(1)</a> </li>
-                  <li> <a href="#" title="Karimnagar(1)">Karimnagar(1)</a> </li>
-                  <li> <a href="#" title="Udaipur(1)">Udaipur(1)</a> </li>
-                  <li> <a href="#" title="Kurnool(1)">Kurnool(1)</a> </li>
-                  <li> <a href="#" title="Agra(1)">Agra(1)</a> </li>
-                  <li> <a href="#" title="Mansoorabad(1)">Mansoorabad(1)</a> </li>
-                  <li> <a href="#" title="Mathura(1)">Mathura(1)</a> </li>
-                 
-               </ul>
-               <h3 class="sidebar-heading"> By Department </h3>
-               <div class="sidebar-typo"> <input type="text" name="By-Department" id="By-Department-Input" onkeyup="if (!window.__cfRLUnblockHandlers) return false; desktopFilterSearchFunction(this.name)" placeholder="Search By Department.." title="Type in a name" data-cf-modified-04d5dadbaedc5466618bce0f-> </div>
-               <ul id="Search-By-Department">
-                  <li> <a href="#">CARDIOLOGY AND CARDIAC SURGERY(185)</a> </li>
-                  <li> <a href="#">COSMETIC AND PLASTIC SURGERY(121)</a> </li>
-                  <li> <a href="#">DENTAL TREATMENT(110)</a> </li>
-                  <li> <a href="#">DERMATOLOGY(121)</a> </li>
-                  <li> <a href="#">ENDOCRINOLOGY(111)</a> </li>
-                  <li> <a href="#">ENT SURGERY(111)</a> </li>
-                  <li> <a href="#">GASTROENTEROLOGY(111)</a> </li>
-                  <li> <a href="#">GENERAL SURGERY(111)</a> </li>
-                  <li> <a href="#">GYNECOLOGY(116)</a> </li>
-                  <li> <a href="#">HEMATOLOGY(117)</a> </li>
-                  <li> <a href="#">HEPATOLOGY(101)</a> </li>
-                  <li> <a href="#">IVF and INFERTILITY(116)</a> </li>
-                  <li> <a href="#">NEPHROLOGY(111)</a> </li>
-                  <li> <a href="#">NEUROLOGY AND NEUROSURGERY(119)</a> </li>
-                  <li> <a href="#">OBESITY OR BARIATRIC SURGERY(111)</a> </li>
-                  <li> <a href="#">ONCOLOGY AND ONCOSURGERY(118)</a> </li>
-                  <li> <a href="#">OPTHALMOLOGY(106)</a> </li>
-                  <li> <a href="#">ORTHOPEDICS(111)</a> </li>
-                  <li> <a href="#">PEDIATRIC CARDIOLOGY(103)</a> </li>
-                  <li> <a href="#">PEDIATRICS AND PEDIATRIC SURGERY(112)</a> </li>
-                  <li> <a href="#">PULMONOLOGY(111)</a> </li>
-                  <li> <a href="#">RHEUMATOLOGY(111)</a> </li>
-                  <li> <a href="#">SPINE SURGERY(111)</a> </li>
-                  <li> <a href="#">TRANSPLANT SURGERY(111)</a> </li>
-                  <li> <a href="#">UROLOGY TREATMENT(125)</a> </li>
-                  <li> <a href="#">VASCULAR SURGERY(111)</a> </li>
-               </ul>
-            </div>
-            <div class="side-doc-block hide-for-mobile">
-               <h4 class="sectionSubHeading"> <strong>BEST DOCTORS</strong> </h4>
-               <ul class="side-doc">
-                  <li><a href="#" title="Best  Doctors in India">Best Doctors in India</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <div class="col-sm-8 col-md-9 col-xs-12">
-      <h1 class="doct-listing-heading sectionHeading"> <i class="fa fa-user-md sectionIcons"></i> Best Hospitals in India </h1>
-      <div id="searching-items" class="selected-filters clearfix" style="display: none;"></div>
-      <h4 class="search-filter-doctor">Hospitals By City</h4>
-      <label class="selected-city"></label> 
-      <ul class="doctor-city-filter">
-         <li id="city-New-Delhi"><a href="#" title="Best Doctors In New Delhi">New Delhi(70)</a></li>
-         <li id="city-Hyderabad"><a href="#" title="Best Doctors In Hyderabad">Hyderabad(44)</a></li>
-         <li id="city-Bangalore"><a href="#" title="Best Doctors In Bangalore">Bangalore(43)</a></li>
-         <li id="city-Chennai"><a href="#" title="Best Doctors In Chennai">Chennai(39)</a></li>
-         <li id="city-Mumbai"><a href="#" title="Best Doctors In Mumbai">Mumbai(37)</a></li>
-         <li id="city-Gurgaon"><a href="#" title="Best Doctors In Gurgaon">Gurgaon(35)</a></li>
-         <li role="presentation" class="dropdown">
-            <a title="More Cities" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">More Cities<span class="caret"></span></a> 
-            <ul class="dropdown-menu">
+         <div class="col-sm-8 col-md-9 col-xs-12">
+            <h1 class="doct-listing-heading sectionHeading"> <i class="fa fa-user-md sectionIcons"></i> Best Hospitals
+               in India </h1>
+            <div id="searching-items" class="selected-filters clearfix" style="display: none;"></div>
+            <h4 class="search-filter-doctor">Hospitals By City</h4>
+            <label class="selected-city"></label>
+            <ul class="doctor-city-filter">
+               <li id="city-New-Delhi"><a href="#" title="Best Doctors In New Delhi">New Delhi(70)</a></li>
+               <li id="city-Hyderabad"><a href="#" title="Best Doctors In Hyderabad">Hyderabad(44)</a></li>
+               <li id="city-Bangalore"><a href="#" title="Best Doctors In Bangalore">Bangalore(43)</a></li>
+               <li id="city-Chennai"><a href="#" title="Best Doctors In Chennai">Chennai(39)</a></li>
+               <li id="city-Mumbai"><a href="#" title="Best Doctors In Mumbai">Mumbai(37)</a></li>
                <li id="city-Gurgaon"><a href="#" title="Best Doctors In Gurgaon">Gurgaon(35)</a></li>
-               <li id="city-Pune"><a href="#" title="Best Doctors In Pune">Pune(27)</a></li>
-               <li id="city-Kolkata"><a href="#" title="Best Doctors In Kolkata">Kolkata(19)</a></li>
-               <li id="city-Nagpur"><a href="#" title="Best Doctors In Nagpur">Nagpur(16)</a></li>
-               <li id="city-Ahmedabad"><a href="#" title="Best Doctors In Ahmedabad">Ahmedabad(12)</a></li>
-               <li id="city-Lucknow"><a href="#" title="Best Doctors In Lucknow">Lucknow(10)</a></li>
-               <li id="city-Noida"><a href="#" title="Best Doctors In Noida">Noida(10)</a></li>
-               <li id="city-Jaipur"><a href="#" title="Best Doctors In Jaipur">Jaipur(9)</a></li>
-               <li id="city-Indore"><a href="#" title="Best Doctors In Indore">Indore(7)</a></li>
-               <li id="city-Visakhapatnam"><a href="#" title="Best Doctors In Visakhapatnam">Visakhapatnam(6)</a></li>
-               <li id="city-Meerut"><a href="#" title="Best Doctors In Meerut">Meerut(5)</a></li>
-               <li id="city-Amritsar"><a href="#" title="Best Doctors In Amritsar">Amritsar(5)</a></li>
-               <li id="city-Aurangabad"><a href="#" title="Best Doctors In Aurangabad">Aurangabad(5)</a></li>
-               <li id="city-Faridabad"><a href="#" title="Best Doctors In Faridabad">Faridabad(5)</a></li>
-               <li id="city-Kochi"><a href="#" title="Best Doctors In Kochi">Kochi(4)</a></li>
-               <li id="city-Nashik"><a href="#" title="Best Doctors In Nashik">Nashik(4)</a></li>
-               <li id="city-Surat"><a href="#" title="Best Doctors In Surat">Surat(3)</a></li>
-               <li id="city-Vadodara"><a href="#" title="Best Doctors In Vadodara">Vadodara(3)</a></li>
-               <li id="city-Varanasi"><a href="#" title="Best Doctors In Varanasi">Varanasi(3)</a></li>
-               <li id="city-Vijayawada"><a href="#" title="Best Doctors In Vijayawada">Vijayawada(3)</a></li>
-               <li id="city-Ahmednagar"><a href="#" title="Best Doctors In Ahmednagar">Ahmednagar(3)</a></li>
-               <li id="city-Ghaziabad"><a href="#" title="Best Doctors In Ghaziabad">Ghaziabad(3)</a></li>
-               <li id="city-Solapur"><a href="#" title="Best Doctors In Solapur">Solapur(2)</a></li>
-               <li id="city-Kanpur"><a href="#" title="Best Doctors In Kanpur">Kanpur(2)</a></li>
-               <li id="city-Thiruvananthapuram"><a href="#" title="Best Doctors In Thiruvananthapuram">Thiruvananthapuram(2)</a></li>
-               <li id="city-Ludhiana"><a href="#" title="Best Doctors In Ludhiana">Ludhiana(2)</a></li>
-               <li id="city-Calicut"><a href="#" title="Best Doctors In Calicut">Calicut(2)</a></li>
-               <li id="city-Chandigarh"><a href="#" title="Best Doctors In Chandigarh">Chandigarh(2)</a></li>
-               <li id="city-Coimbatore"><a href="#" title="Best Doctors In Coimbatore">Coimbatore(2)</a></li>
-               <li id="city-Patna"><a href="#" title="Best Doctors In Patna">Patna(2)</a></li>
-               <li id="city-Haridwar"><a href="#" title="Best Doctors In Haridwar">Haridwar(1)</a></li>
-               <li id="city-Ranchi"><a href="#" title="Best Doctors In Ranchi">Ranchi(1)</a></li>
-               <li id="city-Rewari"><a href="#" title="Best Doctors In Rewari">Rewari(1)</a></li>
-               <li id="city-Secunderabad"><a href="#" title="Best Doctors In Secunderabad">Secunderabad(1)</a></li>
-               <li id="city-Siliguri"><a href="#" title="Best Doctors In Siliguri">Siliguri(1)</a></li>
-               <li id="city-Jamnagar"><a href="#" title="Best Doctors In Jamnagar">Jamnagar(1)</a></li>
-               <li id="city-Jodhpur"><a href="#" title="Best Doctors In Jodhpur">Jodhpur(1)</a></li>
-               <li id="city-Srikakulam"><a href="#" title="Best Doctors In Srikakulam">Srikakulam(1)</a></li>
-               <li id="city-Kalinganagar"><a href="#" title="Best Doctors In Kalinganagar">Kalinganagar(1)</a></li>
-               <li id="city-Karimnagar"><a href="#" title="Best Doctors In Karimnagar">Karimnagar(1)</a></li>
-               <li id="city-Udaipur"><a href="#" title="Best Doctors In Udaipur">Udaipur(1)</a></li>
-               <li id="city-Kurnool"><a href="#" title="Best Doctors In Kurnool">Kurnool(1)</a></li>
-               <li id="city-Agra"><a href="#" title="Best Doctors In Agra">Agra(1)</a></li>
-               <li id="city-Mansoorabad"><a href="#" title="Best Doctors In Mansoorabad">Mansoorabad(1)</a></li>
-               <li id="city-Mathura"><a href="#" title="Best Doctors In Mathura">Mathura(1)</a></li>
-               <li id="city-Ajmer"><a href="#" title="Best Doctors In Ajmer">Ajmer(1)</a></li>
-               <li id="city-Mohali"><a href="#" title="Best Doctors In Mohali">Mohali(1)</a></li>
-               <li id="city-Moradabad"><a href="#" title="Best Doctors In Moradabad">Moradabad(1)</a></li>
-               <li id="city-Bathinda"><a href="#" title="Best Doctors In Bathinda">Bathinda(1)</a></li>
-               <li id="city-Bhavnagar"><a href="#" title="Best Doctors In Bhavnagar">Bhavnagar(1)</a></li>
-               <li id="city-Bhubaneswar"><a href="#" title="Best Doctors In Bhubaneswar">Bhubaneswar(1)</a></li>
-               <li id="city-Nellore"><a href="#" title="Best Doctors In Nellore">Nellore(1)</a></li>
-               <li id="city-Nizamabad"><a href="#" title="Best Doctors In Nizamabad">Nizamabad(1)</a></li>
-               <li id="city-Palakkad"><a href="#" title="Best Doctors In Palakkad">Palakkad(1)</a></li>
-               <li id="city-Darjeeling"><a href="#" title="Best Doctors In Darjeeling">Darjeeling(1)</a></li>
-               <li id="city-Pathankot"><a href="#" title="Best Doctors In Pathankot">Pathankot(1)</a></li>
-               <li id="city-Dehradun"><a href="#" title="Best Doctors In Dehradun">Dehradun(1)</a></li>
-               <li id="city-Patiala"><a href="#" title="Best Doctors In Patiala">Patiala(1)</a></li>
-               <li id="city-Gandhinagar"><a href="#" title="Best Doctors In Gandhinagar">Gandhinagar(1)</a></li>
-               <li id="city-Rajkot"><a href="#" title="Best Doctors In Rajkot">Rajkot(1)</a></li>
+               <li role="presentation" class="dropdown">
+                  <a title="More Cities" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">More
+                     Cities<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li id="city-Gurgaon"><a href="#" title="Best Doctors In Gurgaon">Gurgaon(35)</a></li>
+                     <li id="city-Pune"><a href="#" title="Best Doctors In Pune">Pune(27)</a></li>
+                     <li id="city-Kolkata"><a href="#" title="Best Doctors In Kolkata">Kolkata(19)</a></li>
+                     <li id="city-Nagpur"><a href="#" title="Best Doctors In Nagpur">Nagpur(16)</a></li>
+                     <li id="city-Ahmedabad"><a href="#" title="Best Doctors In Ahmedabad">Ahmedabad(12)</a></li>
+                     <li id="city-Lucknow"><a href="#" title="Best Doctors In Lucknow">Lucknow(10)</a></li>
+                     <li id="city-Noida"><a href="#" title="Best Doctors In Noida">Noida(10)</a></li>
+                     <li id="city-Jaipur"><a href="#" title="Best Doctors In Jaipur">Jaipur(9)</a></li>
+                     <li id="city-Indore"><a href="#" title="Best Doctors In Indore">Indore(7)</a></li>
+                     <li id="city-Visakhapatnam"><a href="#" title="Best Doctors In Visakhapatnam">Visakhapatnam(6)</a>
+                     </li>
+                     <li id="city-Meerut"><a href="#" title="Best Doctors In Meerut">Meerut(5)</a></li>
+                     <li id="city-Amritsar"><a href="#" title="Best Doctors In Amritsar">Amritsar(5)</a></li>
+                     <li id="city-Aurangabad"><a href="#" title="Best Doctors In Aurangabad">Aurangabad(5)</a></li>
+                     <li id="city-Faridabad"><a href="#" title="Best Doctors In Faridabad">Faridabad(5)</a></li>
+                     <li id="city-Kochi"><a href="#" title="Best Doctors In Kochi">Kochi(4)</a></li>
+                     <li id="city-Nashik"><a href="#" title="Best Doctors In Nashik">Nashik(4)</a></li>
+                     <li id="city-Surat"><a href="#" title="Best Doctors In Surat">Surat(3)</a></li>
+                     <li id="city-Vadodara"><a href="#" title="Best Doctors In Vadodara">Vadodara(3)</a></li>
+                     <li id="city-Varanasi"><a href="#" title="Best Doctors In Varanasi">Varanasi(3)</a></li>
+                     <li id="city-Vijayawada"><a href="#" title="Best Doctors In Vijayawada">Vijayawada(3)</a></li>
+                     <li id="city-Ahmednagar"><a href="#" title="Best Doctors In Ahmednagar">Ahmednagar(3)</a></li>
+                     <li id="city-Ghaziabad"><a href="#" title="Best Doctors In Ghaziabad">Ghaziabad(3)</a></li>
+                     <li id="city-Solapur"><a href="#" title="Best Doctors In Solapur">Solapur(2)</a></li>
+                     <li id="city-Kanpur"><a href="#" title="Best Doctors In Kanpur">Kanpur(2)</a></li>
+                     <li id="city-Thiruvananthapuram"><a href="#"
+                           title="Best Doctors In Thiruvananthapuram">Thiruvananthapuram(2)</a></li>
+                     <li id="city-Ludhiana"><a href="#" title="Best Doctors In Ludhiana">Ludhiana(2)</a></li>
+                     <li id="city-Calicut"><a href="#" title="Best Doctors In Calicut">Calicut(2)</a></li>
+                     <li id="city-Chandigarh"><a href="#" title="Best Doctors In Chandigarh">Chandigarh(2)</a></li>
+                     <li id="city-Coimbatore"><a href="#" title="Best Doctors In Coimbatore">Coimbatore(2)</a></li>
+                     <li id="city-Patna"><a href="#" title="Best Doctors In Patna">Patna(2)</a></li>
+                     <li id="city-Haridwar"><a href="#" title="Best Doctors In Haridwar">Haridwar(1)</a></li>
+                     <li id="city-Ranchi"><a href="#" title="Best Doctors In Ranchi">Ranchi(1)</a></li>
+                     <li id="city-Rewari"><a href="#" title="Best Doctors In Rewari">Rewari(1)</a></li>
+                     <li id="city-Secunderabad"><a href="#" title="Best Doctors In Secunderabad">Secunderabad(1)</a>
+                     </li>
+                     <li id="city-Siliguri"><a href="#" title="Best Doctors In Siliguri">Siliguri(1)</a></li>
+                     <li id="city-Jamnagar"><a href="#" title="Best Doctors In Jamnagar">Jamnagar(1)</a></li>
+                     <li id="city-Jodhpur"><a href="#" title="Best Doctors In Jodhpur">Jodhpur(1)</a></li>
+                     <li id="city-Srikakulam"><a href="#" title="Best Doctors In Srikakulam">Srikakulam(1)</a></li>
+                     <li id="city-Kalinganagar"><a href="#" title="Best Doctors In Kalinganagar">Kalinganagar(1)</a>
+                     </li>
+                     <li id="city-Karimnagar"><a href="#" title="Best Doctors In Karimnagar">Karimnagar(1)</a></li>
+                     <li id="city-Udaipur"><a href="#" title="Best Doctors In Udaipur">Udaipur(1)</a></li>
+                     <li id="city-Kurnool"><a href="#" title="Best Doctors In Kurnool">Kurnool(1)</a></li>
+                     <li id="city-Agra"><a href="#" title="Best Doctors In Agra">Agra(1)</a></li>
+                     <li id="city-Mansoorabad"><a href="#" title="Best Doctors In Mansoorabad">Mansoorabad(1)</a></li>
+                     <li id="city-Mathura"><a href="#" title="Best Doctors In Mathura">Mathura(1)</a></li>
+                     <li id="city-Ajmer"><a href="#" title="Best Doctors In Ajmer">Ajmer(1)</a></li>
+                     <li id="city-Mohali"><a href="#" title="Best Doctors In Mohali">Mohali(1)</a></li>
+                     <li id="city-Moradabad"><a href="#" title="Best Doctors In Moradabad">Moradabad(1)</a></li>
+                     <li id="city-Bathinda"><a href="#" title="Best Doctors In Bathinda">Bathinda(1)</a></li>
+                     <li id="city-Bhavnagar"><a href="#" title="Best Doctors In Bhavnagar">Bhavnagar(1)</a></li>
+                     <li id="city-Bhubaneswar"><a href="#" title="Best Doctors In Bhubaneswar">Bhubaneswar(1)</a></li>
+                     <li id="city-Nellore"><a href="#" title="Best Doctors In Nellore">Nellore(1)</a></li>
+                     <li id="city-Nizamabad"><a href="#" title="Best Doctors In Nizamabad">Nizamabad(1)</a></li>
+                     <li id="city-Palakkad"><a href="#" title="Best Doctors In Palakkad">Palakkad(1)</a></li>
+                     <li id="city-Darjeeling"><a href="#" title="Best Doctors In Darjeeling">Darjeeling(1)</a></li>
+                     <li id="city-Pathankot"><a href="#" title="Best Doctors In Pathankot">Pathankot(1)</a></li>
+                     <li id="city-Dehradun"><a href="#" title="Best Doctors In Dehradun">Dehradun(1)</a></li>
+                     <li id="city-Patiala"><a href="#" title="Best Doctors In Patiala">Patiala(1)</a></li>
+                     <li id="city-Gandhinagar"><a href="#" title="Best Doctors In Gandhinagar">Gandhinagar(1)</a></li>
+                     <li id="city-Rajkot"><a href="#" title="Best Doctors In Rajkot">Rajkot(1)</a></li>
+                  </ul>
+               </li>
             </ul>
-         </li>
-      </ul>
-      <div class="view view-search-solr view-id-search_solr view-display-id-page view-dom-id-2902640fc9d7049c793e168f267d6001">
-      <div class="attachment attachment-before">
-         <div id="views-record-count-text"><strong>476 records found.</strong></div>
-      </div>
-      <div class="view-content">
-      <div class="item-list">
-      <ul id="hospital-container" class="mob-padding">
-      <li class="views-row views-row-1 views-row-odd views-row-first">
-         <div class="list-card hospDep_2522">
-            <div class="list-card-row">
-               <div class="list-card-media object-grid-Dimg">
-                  <a href="#" title="Indraprastha Apollo Hospital, New Delhi"> <img alt="Indraprastha Apollo Hospital, New Delhi" title="#" title="Whatsapp Chat"><span class="doc-chat-list"><img src="https://www.vaidam.com/assets/v2/images/svg/icons8-whatsapp.svg" width="32" height="32" alt="Whatsapp Chat" title="Whatsapp Chat"> Chat</span></a> 
-                  <div class="mobile-heading"> <span class="inlineblock left"></span> </div>
+            <div
+               class="view view-search-solr view-id-search_solr view-display-id-page view-dom-id-2902640fc9d7049c793e168f267d6001">
+               <div class="attachment attachment-before">
+                  <div id="views-record-count-text"><strong>476 records found.</strong></div>
                </div>
-               <div class="list-card-info">
-                  <div class="clearfix margin10-bottom">
-                     <div class="col-md-8 col-sm-12 col-xs-12 nopad margin10-bottom">
-                        <a class="desktop-hide whatsapp-chat-text" target="_blank" href="#" title="Whatsapp Chat"><span class="doc-chat-list"><img src="https://www.vaidam.com/assets/v2/images/svg/icons8-whatsapp.svg" width="32" height="32" alt="Whatsapp Chat" title="Whatsapp Chat"> Chat</span></a> 
-                        <h2 class="primary-heading-md"> <a href="#" title="Indraprastha Apollo Hospital, New Delhi">Indraprastha Apollo Hospital, New Delhi</a> </h2>
-                        <span class="secondary-heading-md hospital-subtext clearfix"> <i class="fa fa-map-marker" title="New Delhi , India"></i> New Delhi , India</span> <span class="secondary-heading-md hospital-subtext clearfix"><i class="fa fa-hospital-o" title="Established in 1996"></i> Established in : <span class="font-bold">1996</span> </span> <span class="secondary-heading-md hospital-subtext clearfix"> <i class="fa fa-bed" title="Number of Beds 1000"></i> Number of Beds : <span class="font-bold">1000</span> </span> <span class="secondary-heading-md hospital-subtext clearfix"><i class="fa fa-certificate" title="Multi Specialty"></i> Multi Specialty,</span><span><i class="fa fa-star-o" title="Indraprastha Apollo Hospital, New Delhi"></i> About Indraprastha Apollo Hospital, New Delhi </span><br>  
-                        <div class="text-body add-view-more" data-visible-item="3" data-showmore-text="More Details" data-showless-text="Less Details" data-has-scroll="false">
-                           <ul>
-                              <li>Established in 1996, Indraprastha Apollo Hospital is NABL and JCI accredited.</li>
-                              <li>Apollo Group offers&nbsp;10,000 beds across 64 hospitals, more than 2,200 pharmacies, over 100 primary care &amp; diagnostic clinics and&nbsp;115 telemedicine units across 9 countries.</li>
-                              <li>Indraprastha Apollo Hospital has 52 specialties under one roof.</li>
-                              <li>Major specialities of the hospital include&nbsp;Anaesthesia, Cardiology, Cardiac Surgery, Cancer, Paediatrics, Critical Care, Emergency Care, Fetal Medicine, Gastroenterology and Hepatology, Obstetrics &amp; Gynaecology, Interventional Radiology, IVF, Liver and Kidney Transplant, Nuclear Medicine, Nephrology, Neurosciences, Ophthalmology, Orthopaedics, Otolaryngology (ENT), Paediatrics, Pediatric Surgery, Psychiatry and Clinical Psychology, Plastic &amp; Reconstructive Surgery, Respiratory &amp; Sleep Medicine, Rheumatology, Spine Surgery, Urology and Andrology and Vascular and Endovascular Surgery.</li>
-                              <li>First hospital in India to perform a Paediatric Liver Transplant in 1998.</li>
-                              <li>The hospital ranked first in Neurosciences, Renal Sciences, Oncology, Paediatrics, Gynaecology and Obstetrics &amp; Emergency in&nbsp;The Times Of India Healthcare Survey 2016.</li>
-                              <li>It has also ranked the 6th Best Private Hospital in India for Cardiology by The WEEK in the&nbsp;Best Hospital Survey 2013 conducted by&nbsp;A C Nielsen.</li>
-                              <li>Awarded a Special Commendation for the Golden Peacock Environment Management Award by a jury chaired by&nbsp;Justice P. N. Bhagwati and&nbsp;Former Chief Justice of India for the hospital's environmental practices.</li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-12 col-xs-12 margin10-bottom">
-                        <div class="award-listing right">
-                           <ul>
-                              <li><img src="https://www.vaidam.com/sites/default/files/accreditations_83.png" data-src="https://www.vaidam.com/sites/default/files/accreditations_83.png" alt="Award" width="45" height="45"></li>
-                              <li><img src="https://www.vaidam.com/sites/default/files/accreditations_85.png" data-src="https://www.vaidam.com/sites/default/files/accreditations_85.png" alt="Award" width="45" height="45"></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="clearfix">
-                     <div class="col-xs-6 nopad text-left"> <a href="#">View Details</a></div>
-                     <div class="col-xs-12 nopad geo-other" style="text-align: right;"> <a onclick="if (!window.__cfRLUnblockHandlers) return false; setdata(this)" doc-name="Indraprastha Apollo Hospital, New Delhi" doc-url="https://www.vaidam.com/lp/consult-online?hospital=2522" btn-type="Enquiry Button on List Element" page-type="Hospital List Page" doc-depart doc-speciality doc-hosp="Indraprastha Apollo Hospital, New Delhi" href="#" title="Contact Hospital" class="doctor-book-appointment" data-link="https://www.vaidam.com/lp/consult-online" data-cf-modified-04d5dadbaedc5466618bce0f-><button class="btn btn-dark-replace btn-action" style="font-size: 18px !important;padding: 10px 40px !important;border-radius: 7px !important;">Contact Hospital</button></a></div>
-                     <div class="col-xs-6 nopad geo-in text-right" style="text-align: right; display: none;">
-                        <a onclick="if (!window.__cfRLUnblockHandlers) return false; setdata(this)" doc-name="Indraprastha Apollo Hospital, New Delhi" doc-url="q" btn-type="Book Apointment Button on List Element" page-type="Hospital List Page" doc-depart doc-speciality doc-hosp="Indraprastha Apollo Hospital, New Delhi" href="#" title="Book Apointment" data-link="https://www.vaidam.com/lp/consult-online?hospital=2522" data-cf-modified-04d5dadbaedc5466618bce0f-><button class="btn btn-dark-replace btn-action send-enquiry-button" style="font-size: 16px;padding: 8px 30px;border-radius: 7px !important;">Book Apointment</button></a> 
-                        <p class="enquiry-support-text">Get response within 24hrs</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </li>
-      <div class="dynamic_content">
-      <div class="main_container">
-      <style type="text/css"> .primary-form{background-color: #f7f7f7;}</style>
+               <div class="view-content">
+                  <div class="item-list">
+                     <ul id="hospital-container" class="mob-padding">
+                        <li class="views-row views-row-1 views-row-odd views-row-first">
+                           <div class="list-card hospDep_2522">
+                              <div class="list-card-row">
+                                 <div class="list-card-media object-grid-Dimg">
+                                    <a href="#" title="Indraprastha Apollo Hospital, New Delhi"> <img
+                                          alt="Indraprastha Apollo Hospital, New Delhi" title="#"
+                                          title="Whatsapp Chat"><span class="doc-chat-list"><img
+                                             src="https://www.vaidam.com/assets/v2/images/svg/icons8-whatsapp.svg"
+                                             width="32" height="32" alt="Whatsapp Chat" title="Whatsapp Chat">
+                                          Chat</span></a>
+                                    <div class="mobile-heading"> <span class="inlineblock left"></span> </div>
+                                 </div>
+                                 <div class="list-card-info">
+                                    <div class="clearfix margin10-bottom">
+                                       <div class="col-md-8 col-sm-12 col-xs-12 nopad margin10-bottom">
+                                          <a class="desktop-hide whatsapp-chat-text" target="_blank" href="#"
+                                             title="Whatsapp Chat"><span class="doc-chat-list"><img
+                                                   src="https://www.vaidam.com/assets/v2/images/svg/icons8-whatsapp.svg"
+                                                   width="32" height="32" alt="Whatsapp Chat" title="Whatsapp Chat">
+                                                Chat</span></a>
+                                          <h2 class="primary-heading-md"> <a href="#"
+                                                title="Indraprastha Apollo Hospital, New Delhi">Indraprastha Apollo
+                                                Hospital, New Delhi</a> </h2>
+                                          <span class="secondary-heading-md hospital-subtext clearfix"> <i
+                                                class="fa fa-map-marker" title="New Delhi , India"></i> New Delhi ,
+                                             India</span> <span
+                                             class="secondary-heading-md hospital-subtext clearfix"><i
+                                                class="fa fa-hospital-o" title="Established in 1996"></i> Established in
+                                             : <span class="font-bold">1996</span> </span> <span
+                                             class="secondary-heading-md hospital-subtext clearfix"> <i
+                                                class="fa fa-bed" title="Number of Beds 1000"></i> Number of Beds :
+                                             <span class="font-bold">1000</span> </span> <span
+                                             class="secondary-heading-md hospital-subtext clearfix"><i
+                                                class="fa fa-certificate" title="Multi Specialty"></i> Multi
+                                             Specialty,</span><span><i class="fa fa-star-o"
+                                                title="Indraprastha Apollo Hospital, New Delhi"></i> About Indraprastha
+                                             Apollo Hospital, New Delhi </span><br>
+                                          <div class="text-body add-view-more" data-visible-item="3"
+                                             data-showmore-text="More Details" data-showless-text="Less Details"
+                                             data-has-scroll="false">
+                                             <ul>
+                                                <li>Established in 1996, Indraprastha Apollo Hospital is NABL and JCI
+                                                   accredited.</li>
+                                                <li>Apollo Group offers&nbsp;10,000 beds across 64 hospitals, more than
+                                                   2,200 pharmacies, over 100 primary care &amp; diagnostic clinics
+                                                   and&nbsp;115 telemedicine units across 9 countries.</li>
+                                                <li>Indraprastha Apollo Hospital has 52 specialties under one roof.</li>
+                                                <li>Major specialities of the hospital include&nbsp;Anaesthesia,
+                                                   Cardiology, Cardiac Surgery, Cancer, Paediatrics, Critical Care,
+                                                   Emergency Care, Fetal Medicine, Gastroenterology and Hepatology,
+                                                   Obstetrics &amp; Gynaecology, Interventional Radiology, IVF, Liver
+                                                   and Kidney Transplant, Nuclear Medicine, Nephrology, Neurosciences,
+                                                   Ophthalmology, Orthopaedics, Otolaryngology (ENT), Paediatrics,
+                                                   Pediatric Surgery, Psychiatry and Clinical Psychology, Plastic &amp;
+                                                   Reconstructive Surgery, Respiratory &amp; Sleep Medicine,
+                                                   Rheumatology, Spine Surgery, Urology and Andrology and Vascular and
+                                                   Endovascular Surgery.</li>
+                                                <li>First hospital in India to perform a Paediatric Liver Transplant in
+                                                   1998.</li>
+                                                <li>The hospital ranked first in Neurosciences, Renal Sciences,
+                                                   Oncology, Paediatrics, Gynaecology and Obstetrics &amp; Emergency
+                                                   in&nbsp;The Times Of India Healthcare Survey 2016.</li>
+                                                <li>It has also ranked the 6th Best Private Hospital in India for
+                                                   Cardiology by The WEEK in the&nbsp;Best Hospital Survey 2013
+                                                   conducted by&nbsp;A C Nielsen.</li>
+                                                <li>Awarded a Special Commendation for the Golden Peacock Environment
+                                                   Management Award by a jury chaired by&nbsp;Justice P. N. Bhagwati
+                                                   and&nbsp;Former Chief Justice of India for the hospital's
+                                                   environmental practices.</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4 col-sm-12 col-xs-12 margin10-bottom">
+                                          <div class="award-listing right">
+                                             <ul>
+                                                <li><img
+                                                      src="https://www.vaidam.com/sites/default/files/accreditations_83.png"
+                                                      data-src="https://www.vaidam.com/sites/default/files/accreditations_83.png"
+                                                      alt="Award" width="45" height="45"></li>
+                                                <li><img
+                                                      src="https://www.vaidam.com/sites/default/files/accreditations_85.png"
+                                                      data-src="https://www.vaidam.com/sites/default/files/accreditations_85.png"
+                                                      alt="Award" width="45" height="45"></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="clearfix">
+                                       <div class="col-xs-6 nopad text-left"> <a href="#">View Details</a></div>
+                                       <div class="col-xs-12 nopad geo-other" style="text-align: right;"> <a
+                                             onclick="if (!window.__cfRLUnblockHandlers) return false; setdata(this)"
+                                             doc-name="Indraprastha Apollo Hospital, New Delhi"
+                                             doc-url="https://www.vaidam.com/lp/consult-online?hospital=2522"
+                                             btn-type="Enquiry Button on List Element" page-type="Hospital List Page"
+                                             doc-depart doc-speciality
+                                             doc-hosp="Indraprastha Apollo Hospital, New Delhi" href="#"
+                                             title="Contact Hospital" class="doctor-book-appointment"
+                                             data-link="https://www.vaidam.com/lp/consult-online"
+                                             data-cf-modified-04d5dadbaedc5466618bce0f-><button
+                                                class="btn btn-dark-replace btn-action"
+                                                style="font-size: 18px !important;padding: 10px 40px !important;border-radius: 7px !important;">Contact
+                                                Hospital</button></a></div>
+                                       <div class="col-xs-6 nopad geo-in text-right"
+                                          style="text-align: right; display: none;">
+                                          <a onclick="if (!window.__cfRLUnblockHandlers) return false; setdata(this)"
+                                             doc-name="Indraprastha Apollo Hospital, New Delhi" doc-url="q"
+                                             btn-type="Book Apointment Button on List Element"
+                                             page-type="Hospital List Page" doc-depart doc-speciality
+                                             doc-hosp="Indraprastha Apollo Hospital, New Delhi" href="#"
+                                             title="Book Apointment"
+                                             data-link="https://www.vaidam.com/lp/consult-online?hospital=2522"
+                                             data-cf-modified-04d5dadbaedc5466618bce0f-><button
+                                                class="btn btn-dark-replace btn-action send-enquiry-button"
+                                                style="font-size: 16px;padding: 8px 30px;border-radius: 7px !important;">Book
+                                                Apointment</button></a>
+                                          <p class="enquiry-support-text">Get response within 24hrs</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <div class="dynamic_content">
+                           <div class="main_container">
+                              <style type="text/css">
+                                 .primary-form {
+                                    background-color: #f7f7f7;
+                                 }
+                              </style>
 
-      <div class="login-container">
-         <h2 style="text-align: center;">Help Us With Patient Details</h2>
-         <form>
-             <div class="form-group">
-                 <label for="username">Name<span style="color: red;">*</span></label>
-                 <input type="text" id="username" name="username"placeholder="Patient Name" required>
-             </div>
-             <div class="form-group">
-                 <label for="Email">Email<span style="color: red;">*</span></label>
-                 <input type="email" id="email" name="email"placeholder="Enter email" required>
-             </div>
-             <div class="form-group">
-                 <label for="Phone-Number">Phone Number<span style="color: red;">*</span></label>
-                 <input type="tel" id="phone" name="phone"placeholder="Your Phone number" required>
-             </div>
-             <div class="form-group">
-                 <label for="Phone-Number">City<span style="color: red;">*</span></label>
-                 <input type="text" id="text" name="city"placeholder="Enter City" required>
-             </div>
-             <div class="form-group">
-                 <label for="Email">Description<span style="color: red;">*</span></label>
-                 <textarea id="description" name="description" placeholder="Describe The Current Medical Problem"
-                     required></textarea>
-             </div>
-             <div class="form-group">
-                 <label for="Patient">Patient's Age or Date Of Birth<span style="color: red;">*</span></label>
-                 <input type="text" id="text" name="city"placeholder="Enter City" required>
-             </div>
-             
-             <button type="submit">SUBMIT</button>
-             <p class="conditions">By submitting the form I agree to the Terms of Use and Privacy Policy of Vaidam Health</p>
- 
-         </form>
-         
-     </div>
+                              <div class="login-container">
+                                 <h2 style="text-align: center;">Help Us With Patient Details</h2>
+                                 <form>
+                                    <div class="form-group">
+                                       <label for="username">Name<span style="color: red;">*</span></label>
+                                       <input type="text" id="username" name="username" placeholder="Patient Name"
+                                          required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="Email">Email<span style="color: red;">*</span></label>
+                                       <input type="email" id="email" name="email" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="Phone-Number">Phone Number<span style="color: red;">*</span></label>
+                                       <input type="tel" id="phone" name="phone" placeholder="Your Phone number"
+                                          required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="Phone-Number">City<span style="color: red;">*</span></label>
+                                       <input type="text" id="text" name="city" placeholder="Enter City" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="Email">Description<span style="color: red;">*</span></label>
+                                       <textarea id="description" name="description"
+                                          placeholder="Describe The Current Medical Problem" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                       <label for="Patient">Patient's Age or Date Of Birth<span
+                                             style="color: red;">*</span></label>
+                                       <input type="text" id="text" name="city" placeholder="Enter City" required>
+                                    </div>
 
-     <script>
-      // Dummy data for hospitals
-const hospitals = [
-  {
-    name: 'Hospital A',
-    location: 'Location A',
-    established: 2000,
-    beds: 500,
-    specialties: 'Specialty A, Specialty B, Specialty C',
-    description: 'Description of Hospital A'
-  },
-  {
-    name: 'Hospital B',
-    location: 'Location B',
-    established: 1995,
-    beds: 700,
-    specialties: 'Specialty D, Specialty E, Specialty F',
-    description: 'Description of Hospital B'
-  },
-  {
-    name: 'Hospital C',
-    location: 'Location C',
-    established: 2010,
-    beds: 1000,
-    specialties: 'Specialty G, Specialty H, Specialty I',
-    description: 'Description of Hospital C'
-  },
-  {
-    name: 'Hospital D',
-    location: 'Location D',
-    established: 2005,
-    beds: 600,
-    specialties: 'Specialty J, Specialty K, Specialty L',
-    description: 'Description of Hospital D'
-  },
-  {
-    name: 'Hospital E',
-    location: 'Location E',
-    established: 1990,
-    beds: 800,
-    specialties: 'Specialty M, Specialty N, Specialty O',
-    description: 'Description of Hospital E'
-  }
-];
+                                    <button type="submit">SUBMIT</button>
+                                    <p class="conditions">By submitting the form I agree to the Terms of Use and Privacy
+                                       Policy of Vaidam Health</p>
 
-// Function to render hospital data
-function renderHospitals(data) {
-  const container = document.getElementById('hospital-container');
-  
-  data.forEach((hospital, index) => {
-    const hospitalTemplate = `
+                                 </form>
+
+                              </div>
+
+                              <script>
+                                 // Dummy data for hospitals
+                                 const hospitals = [
+                                    {
+                                       name: 'Hospital A',
+                                       location: 'Location A',
+                                       established: 2000,
+                                       beds: 500,
+                                       specialties: 'Specialty A, Specialty B, Specialty C',
+                                       description: 'Description of Hospital A'
+                                    },
+                                    {
+                                       name: 'Hospital B',
+                                       location: 'Location B',
+                                       established: 1995,
+                                       beds: 700,
+                                       specialties: 'Specialty D, Specialty E, Specialty F',
+                                       description: 'Description of Hospital B'
+                                    },
+                                    {
+                                       name: 'Hospital C',
+                                       location: 'Location C',
+                                       established: 2010,
+                                       beds: 1000,
+                                       specialties: 'Specialty G, Specialty H, Specialty I',
+                                       description: 'Description of Hospital C'
+                                    },
+                                    {
+                                       name: 'Hospital D',
+                                       location: 'Location D',
+                                       established: 2005,
+                                       beds: 600,
+                                       specialties: 'Specialty J, Specialty K, Specialty L',
+                                       description: 'Description of Hospital D'
+                                    },
+                                    {
+                                       name: 'Hospital E',
+                                       location: 'Location E',
+                                       established: 1990,
+                                       beds: 800,
+                                       specialties: 'Specialty M, Specialty N, Specialty O',
+                                       description: 'Description of Hospital E'
+                                    }
+                                 ];
+
+                                 // Function to render hospital data
+                                 function renderHospitals(data) {
+                                    const container = document.getElementById('hospital-container');
+
+                                    data.forEach((hospital, index) => {
+                                       const hospitalTemplate = `
       <div class="list-card hospDep_${index}">
         <!-- ... (The rest of the provided HTML template) ... -->
         <h2 class="primary-heading-md">
@@ -507,15 +619,16 @@ function renderHospitals(data) {
         <!-- ... (Rest of the HTML using hospital data) ... -->
       </div>
     `;
-    
-    container.innerHTML += hospitalTemplate;
-  });
-}
 
-// Call the function to render hospitals
-renderHospitals(hospitals);
+                                       container.innerHTML += hospitalTemplate;
+                                    });
+                                 }
 
-     </script>
-     
-      </body> 
+                                 // Call the function to render hospitals
+                                 renderHospitals(hospitals);
+
+                              </script>
+
+                              </body>
+
 </html>
