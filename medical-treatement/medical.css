@@ -10,7 +10,7 @@
 .Treatement-heading {
     text-align: center;
     background-color: #2bb9e1; /* Replace with your preferred background color */
-    padding: 20px; /* Adjust the padding as needed */
+    padding: 15px; /* Adjust the padding as needed */
   }
   
   .Treatement-heading h2 {
@@ -35,7 +35,8 @@
     font-size: 24px;
     font-weight: bold;
     color: #333; 
-    margin:10px
+    margin:10px;
+    padding-top: 30px;
     /* Adjust the text color as needed */
     /* Additional styles for the title */
   }
@@ -46,6 +47,8 @@
     color: #333;
     line-height: 1.6;
     margin:10px;
+    /* padding-top: 80px; */
+    padding: 80px;
     /* Add other general styles for text and spacing */
 }
 
@@ -53,6 +56,7 @@
     text-align: justify;
     margin-bottom: 15px;
     margin:10px;
+    padding:5px;
     /* Additional paragraph styles */
 }
 
@@ -62,6 +66,7 @@
     font-weight: bold;
     margin-top: 20px;
     margin:10px;
+    /* padding:80px; */
     /* Additional heading styles */
 }
 
@@ -87,7 +92,7 @@
     margin:10px;
     /* Additional styles for read less link */
 }
-p {
+.cbp-l-doctor-info p {
     font-family: Arial, sans-serif;
     font-weight: 400;
     color: #333;
@@ -96,33 +101,100 @@ p {
     /* Additional paragraph styles */
 }
 
-h2 {
+.cbp-l-doctor-info h2 {
     font-size: 24px;
     font-weight: bold;
     margin:10px;
     /* Additional heading styles */
 }
 
-h3 {
+.cbp-l-doctor-info h3 {
     font-size: 20px;
     font-weight: bold;
     margin:10px;
     /* Additional subheading styles */
 }
 
-ul {
+.cbp-l-doctor-infoul {
     list-style-type: disc;
     padding-left: 20px;
     margin:10px;
     /* Additional unordered list styles */
 }
 
-li {
+.cbp-l-doctor-info li {
     font-weight: 400;
     margin:10px;
     font-size: large;
     /* Additional list item styles */
 }
 
+.login-container {
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    border: 0.5px solid rgba(204, 204, 204, 0.5);
+    border-radius: 5px;
+    /* background-color: #f9f9f9; */
+    color: white;
+    
+}
 
- 
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+
+button {
+    margin: auto;
+    padding: 10px 2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #648fbc;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 0.9rem;
+}
+button :hover{
+    background-color: aqua;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.conditions {
+    font-size: 13px;
+    color: #ffffff;
+    margin-top: 8px;
+    padding-left: 25px;
+}
