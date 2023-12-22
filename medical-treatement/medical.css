@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+.Treatement-heading {
+    text-align: center;
+    background-color: #2bb9e1; /* Replace with your preferred background color */
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .Treatement-heading h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; /* Adjust the text color as needed */
+    /* Additional styles for the heading */
+  }
+  
+  .Treatement-heading p {
+    font-size: 18px;
+    color: #666; /* Adjust the text color as needed */
+    /* Additional styles for the paragraph */
+  }
+
+  .title-content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .doctor-hospital-title h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+    margin:10px
+    /* Adjust the text color as needed */
+    /* Additional styles for the title */
+  }
+
+
+  .read-more-content {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin:10px;
+    /* Add other general styles for text and spacing */
+}
+
+.read-more-content p {
+    text-align: justify;
+    margin-bottom: 15px;
+    margin:10px;
+    /* Additional paragraph styles */
+}
+
+.read-more-content h2,
+.read-more-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin:10px;
+    /* Additional heading styles */
+}
+
+.read-more-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin:10px;
+    /* Additional unordered list styles */
+}
+
+.read-more-content li {
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin:10px;
+    /* Additional list item styles */
+}
+
+.read-more-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+    margin:10px;
+    /* Additional styles for read less link */
+}
+p {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+    margin:10px;
+    /* Additional paragraph styles */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin:10px;
+    /* Additional heading styles */
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px;
+    /* Additional subheading styles */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin:10px;
+    /* Additional unordered list styles */
+}
+
+li {
+    font-weight: 400;
+    margin:10px;
+    font-size: large;
+    /* Additional list item styles */
+}
+
+
+ 
