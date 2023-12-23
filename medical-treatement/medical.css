@@ -7,36 +7,62 @@
     font-family: Arial, sans-serif;
 }
 
-main{
+main {
     margin-top: 100px;
+}
+
+.treatment__page {
+    display: flex;
+    gap: 1rem;
+    padding: 0 15%;
+}
+
+.treatment__page-navigation {
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    gap: 0.5rem;
+}
+
+.treatment__page-navigation img {
+    border-radius: 8px;
+}
+
+.treatment__page-navigation-link {
+    border-radius: 25px;
+    background-color: rgb(2, 2, 82);
+    padding: 8px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+.treatment__page-content {
+    flex: 0.75;
 }
 
 .heading-blue-color {
     color: rgb(3, 3, 109);
 }
 
-.Treatement-heading {
+.treatment-container {
     text-align: center;
     background-color: #2bb9e1;
-    /* Replace with your preferred background color */
-    padding: 15px;
-    /* Adjust the padding as needed */
 }
 
-.Treatement-heading h2 {
+.treatment-heading h2 {
     font-size: 28px;
     font-weight: bold;
     color: #333;
-    /* Adjust the text color as needed */
-    /* Additional styles for the heading */
 }
 
-.Treatement-heading p {
+.treatment-heading p {
     font-size: 18px;
     color: #666;
-    /* Adjust the text color as needed */
-    /* Additional styles for the paragraph */
 }
+
+/*  */
 
 
 .doctor-hospital-title h5 {
@@ -45,8 +71,6 @@ main{
     color: #333;
     margin: 10px;
     padding-top: 30px;
-    /* Adjust the text color as needed */
-    /* Additional styles for the title */
 }
 
 
@@ -56,7 +80,6 @@ main{
     margin: 10px;
     /* padding-top: 80px; */
     padding: 40px 80px;
-    /* Add other general styles for text and spacing */
 }
 
 .read-more-content p {
@@ -64,7 +87,6 @@ main{
     margin-bottom: 15px;
     margin: 10px;
     padding: 5px;
-    /* Additional paragraph styles */
 }
 
 .read-more-content h2,
@@ -74,21 +96,18 @@ main{
     margin-top: 20px;
     margin: 10px;
     /* padding:80px; */
-    /* Additional heading styles */
 }
 
 .read-more-content ul {
     list-style-type: disc;
     padding-left: 20px;
     margin: 10px;
-    /* Additional unordered list styles */
 }
 
 .read-more-content li {
     font-weight: 400;
     margin-bottom: 5px;
     margin: 10px;
-    /* Additional list item styles */
 }
 
 .read-more-link {
@@ -97,7 +116,6 @@ main{
     margin-top: 20px;
     color: blue;
     margin: 10px;
-    /* Additional styles for read less link */
 }
 
 .cbp-l-doctor-info p {
@@ -106,35 +124,30 @@ main{
     color: #333;
     line-height: 1.6;
     margin: 10px;
-    /* Additional paragraph styles */
 }
 
 .cbp-l-doctor-info h2 {
     font-size: 24px;
     font-weight: bold;
     margin: 10px;
-    /* Additional heading styles */
 }
 
 .cbp-l-doctor-info h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 10px;
-    /* Additional subheading styles */
 }
 
 .cbp-l-doctor-infoul {
     list-style-type: disc;
     padding-left: 20px;
     margin: 10px;
-    /* Additional unordered list styles */
 }
 
 .cbp-l-doctor-info li {
     font-weight: 400;
     margin: 10px;
     font-size: large;
-    /* Additional list item styles */
 }
 
 .contact__form {
