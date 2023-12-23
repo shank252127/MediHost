@@ -688,6 +688,7 @@ body {
 }
 
 
+
 /* CUSTOMER REVIEW */
 .customer-review-slider {
   background-color: #F8F7F7;
@@ -888,7 +889,12 @@ body {
   }
 }
 
-
+.video-review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
 
 
 
@@ -1139,9 +1145,9 @@ body {
   }
 
   .about-us-section {
-    .about-us {
+    /* .about-us {
       grid-gap: 10%;
-    }
+    } */
 
     .photo-part {
       width: 40%;
@@ -1156,7 +1162,7 @@ body {
 
       .female-doc {
         height: 250px;
-        top: 350px
+        /* top: 350px */
       }
     }
 
@@ -1179,9 +1185,9 @@ body {
       .list-of-feature {
         font-size: 12px;
 
-        .row-one {
+        /* .row-one {
           max-width: 100%;
-        }
+        } */
       }
     }
 
