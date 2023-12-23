@@ -20,6 +20,11 @@ body {
   scroll-behavior: smooth;
 }
 
+
+main {
+  margin-top: 100px;
+}
+
 /* COMMON ELEMENTS */
 
 .company-logo-img {
@@ -198,9 +203,6 @@ body {
   justify-content: space-between;
 }
 
-main {
-  margin-top: 20px;
-}
 
 .search-container {
   display: flex;
@@ -238,7 +240,7 @@ main {
 /* Main landing page */
 .main-landing-page {
   position: relative;
-  top: 80px;
+  /* top: 80px; */
   background-image: url("./asset/fontview.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1618,4 +1620,28 @@ main {
   .connect-with-btn {
     font-size: 12px;
   }
+}
+
+.main-section__features {
+  padding: 20px 0;
+}
+
+
+.main-section__features h4,
+.main-section__features h5 {
+  text-align: center;
+}
+
+.main-section__features-list ul {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.main-section__features-list ul li {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
