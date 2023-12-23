@@ -1,313 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>medical-landing</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <!-- Navigation Bar -->
-  <nav class="nav-bar-container">
-    <div class="logo-medihost">
-      <a href="#" class="company-logo">
-        <img class="company-logo-img" src="./asset/MediHostIndia.png" alt="company logo" />
-      </a>
-    </div>
-    <ul class="nav-link-items">
-      <li class="hover-link nav-item" id="Home"> Home</li>
-      <li class="hover-link nav-item" id="Our doctors">Hospitals</li>
-      <li class="hover-link nav-item" id="Our doctors">Doctors</li>
-      <li class="hover-link nav-item" id="Departments">Treatments</li>
-      <li class="hover-link nav-item" id="About us">Medical Visa
-      </li>
-      <li class="hover-link nav-item" id="Blogs">Free Consultation</li>
-      <li class="hover-link nav-item" id="Home">Videos</li>
-    </ul>
-    <div class="connect-with-parent">
-      <button class="connect-with-btn">Connect With Us!</button>
-    </div>
-    <!-- <div class="search-container">
-      <input id="search-text" type="text" class="" placeholder="Search by disease, procedure or hospital" />
-      <img class="search-img" src="./assets/Searchbar.png" alt="Search" />
-    </div> -->
-  </nav>
-  <main>
-    <!-- Main Landing Page -->
-    <section class="main-landing-page">
-      <div class="text-section">
-        <div class="company-info">
-          <div class="heading">Affordable Healthcare Connection at Your Fingertips with Medihost</div>
-          <div class="sub-heading">Explore affordable healthcare with Medihost—connecting you to top hospitals,
-            doctors, and budget-friendly accommodations for personalized and accessible
-            medical care .</div>
-        </div>
-        <div class="login-container">
-          <h2 style="text-align: center;">Connect With Us !!!</h2>
-          <form>
-            <div class="form-group">
-              <label for="username">Name<span style="color: red;">*</span></label>
-              <input type="text" id="username" name="username" placeholder="Patient Name" required>
-            </div>
-            <div class="form-group">
-              <label for="Email">Email<span style="color: red;">*</span></label>
-              <input type="email" id="email" name="email" placeholder="Enter email" required>
-            </div>
-            <div class="form-group">
-              <label for="Phone-Number">Phone Number<span style="color: red;">*</span></label>
-              <input type="tel" id="phone" name="phone" placeholder="Your Phone number" required>
-            </div>
-            <div class="form-group">
-              <label for="Phone-Number">Country<span style="color: red;">*</span></label>
-              <input type="text" id="text" name="city" placeholder="Enter City" required>
-            </div>
-            <div class="form-group">
-              <label for="Phone-Number">City<span style="color: red;">*</span></label>
-              <input type="text" id="text" name="city" placeholder="Enter City" required>
-            </div>
-            <div class="form-group">
-              <label for="Email">Description<span style="color: red;">*</span></label>
-              <textarea id="description" name="description" placeholder="Describe The Current Medical Problem"
-                required></textarea>
-            </div>
-            <!-- <div class="form-group">
-              <label for="Patient">Patient's Age or Date Of Birth<span style="color: red;">*</span></label>
-              <input type="text" id="text" name="city" placeholder="Enter City" required>
-            </div> -->
-            <button type="submit">SUBMIT</button>
-          </form>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>medical-landing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar-container">
+      <div class="nav-bar-container__contactform">
+        <div>Become our Partner!</div>
+        <select>
+          Select Langugage
+          <option>Hindi</option>
+          <option>English</option>
+          <option>Bengali</option>
+          <option>Karnatak</option>
+          <option>Tamil</option>
+        </select>
       </div>
-    </section>
-    <!-- Welcome to Medihost -->
-    <section class="welcome-to-medihost">
-      <div class="welcome-container">
-        <div class="content-welcome">
-          <div class="welcome-prefix">Welcome to Medihost</div>
-          <div class="welcome-heading">A one-stop solution for the best and affordable healthcare</div>
-          <div class="welcome-subheading">A trusted platform which is designed to make healthcare accessible,
-            personalized,
-            and convenient. We simplify the process of connecting you with the best
-            hospitals, doctors, and budget-friendly accommodations. Your well-being is our
-            priority, and we&#39;re here to guide you on your journey to optimal health.</div>
+      <div class="nav-bar-container__main-nav">
+        <div class="logo-medihost">
+          <a href="#" class="company-logo">
+            <img
+              class="company-logo-img"
+              src="./asset/MediHostIndia.png"
+              alt="company logo"
+            />
+          </a>
         </div>
-        <div class="welcome-buttons">
-          <div class="card-button book-appointment">
-            <div class="button-text">Book an Appointment</div>
-            <img src="./asset/calender-icon.svg" alt="">
-          </div>
-          <div class="card-button know-doctors">
-            <div class="button-text">Know about our Doctors</div>
-            <img src="./asset/team.svg" alt="">
-          </div>
-          <div class="card-button check-hospital">
-            <div class="button-text">Check our Hospitals</div>
-            <img src="./asset/cash.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Why we are best -->
-    <section class="we-are-best">
-      <div class="best-container">
-        <div class="best-heading">We try our level best to provide the best service</div>
-        <div class="best-subheading">Dream of always having great wines at home without stressing about it? We are here
-          to help you with just
-          that.</div>
-        <div class="best-content">Your trusted source for reliable healthcare information and resources. We are
-          dedicated to providing you
-          with the latest medical news, expert insights, and valuable health tips to empower you on your wellness
-          journey. Explore our comprehensive content, connect with top healthcare professionals, and take charge
-          of your health with confidence. Your well-being is our priority.</div>
+        <ul class="nav-link-items">
+          <a class="hover-link nav-item" id="Home" href="/">Home</a>
+          <a
+            class="hover-link nav-item"
+            id="Our doctors"
+            href="./hospital-details//hospital-list.html"
+            >Hospitals</a
+          >
+          <a class="hover-link nav-item" id="Our doctors" href="">Doctors</a>
+          <a
+            class="hover-link nav-item"
+            id="Departments"
+            href="./medical-treatement/medical.html"
+            >Treatments</a
+          >
+          <a class="hover-link nav-item" id="About us" href="">Medical Visa</a>
+          <a class="hover-link nav-item" id="Blogs" href=""
+            >Free Consultation</a
+          >
+          <a class="hover-link nav-item" id="Home" href="#video-review"
+            >Videos</a
+          >
+        </ul>
         <div class="connect-with-parent">
           <button class="connect-with-btn">Connect With Us!</button>
         </div>
-    </section>
-    <!-- SEARCH SECTION -->
-    <div class="search-section">
-      <div class="search-body">
-        <div class="know-top-hospital">
-          <div class="hospital-content">
-            <div class="prefix">
-              Start Your Clinical Journey today!
-            </div>
+      </div>
+      <!-- <div class="search-container">
+      <input id="search-text" type="text" class="" placeholder="Search by disease, procedure or hospital" />
+      <img class="search-img" src="./assets/Searchbar.png" alt="Search" />
+    </div> -->
+    </nav>
+    <main>
+      <!-- Main Landing Page -->
+      <section class="main-landing-page">
+        <div class="text-section">
+          <div class="company-info">
             <div class="heading">
-              <div class="text">
-                Know top Hospital in
-              </div>
-              <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  New Delhi
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Cancer</a>
-                  <a class="dropdown-item" href="#">Migrane</a>
-                  <a class="dropdown-item" href="#">Heart Desease</a>
-                </div>
-              </div>
+              Affordable Healthcare Connection at Your Fingertips with Medihost
             </div>
-            <div class="suffix">
-              Explore the best hospitals in different Indian cities on our platform. Find top-
-              notch healthcare facilities to make informed choices for your medical needs.
-              Discover the leading options for your health journey easily.
+            <div class="sub-heading">
+              Explore affordable healthcare with Medihost—connecting you to top
+              hospitals, doctors, and budget-friendly accommodations for
+              personalized and accessible medical care .
             </div>
           </div>
-          <div class="hospital-card">
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-              <div class="hospital-card-title">Indraprastha Apollo Hospital</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">Indraprastha Apollo Hospitals
-                Sarita Vihar, Delhi Mathura Road,
-                New Delhi - 110076, India</div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-              <div class="hospital-card-title">Sir Ganga Ram Hospital</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">Sir Ganga Ram Hospital
-                Rajinder Nagar, New Delhi - 110060, India</div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-              <div class="hospital-card-title">Fortis Escorts Hospital New Delhil</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">Fortis Escorts Heart Institute
-                Okhla Road, New Delhi - 110025, India </div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-              <div class="hospital-card-title">BLK Super Specialty Hospital New Delhi</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">BLK Super Speciality Hospital
-                Pusa Road, Rajinder Nagar,
-                New Delhi - 110005, India. </div>
-            </div>
-          </div>
-          <div class="check-more-parent">
-            <button class="check-more-btn">Check more</button>
+          <div class="login-container">
+            <h2 style="text-align: center">Connect With Us !!!</h2>
+            <form>
+              <div class="form-group">
+                <label for="username"
+                  >Name<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Patient Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email"
+                  >Email<span style="color: red">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Phone-Number"
+                  >Phone Number<span style="color: red">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your Phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Phone-Number"
+                  >Country<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  id="text"
+                  name="city"
+                  placeholder="Enter City"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Phone-Number"
+                  >City<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  id="text"
+                  name="city"
+                  placeholder="Enter City"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email"
+                  >Description<span style="color: red">*</span></label
+                >
+                <textarea
+                  id="description"
+                  name="description"
+                  placeholder="Describe The Current Medical Problem"
+                  required
+                ></textarea>
+              </div>
+              <!-- <div class="form-group">
+              <label for="Patient">Patient's Age or Date Of Birth<span style="color: red;">*</span></label>
+              <input type="text" id="text" name="city" placeholder="Enter City" required>
+            </div> -->
+              <button type="submit">SUBMIT</button>
+            </form>
           </div>
         </div>
-        <div class="top-hospital-in">
-          <div class="hospital-content">
-            <div class="prefix">
-              Top Hospital in
+      </section>
+      <!-- Welcome to Medihost -->
+      <section class="welcome-to-medihost">
+        <div class="welcome-container">
+          <div class="content-welcome">
+            <div class="welcome-prefix">Welcome to Medihost</div>
+            <div class="welcome-heading">
+              A one-stop solution for the best and affordable healthcare
             </div>
-            <div class="heading">
-              New Delhi
-            </div>
-            <div class="suffix">
-              for
-            </div>
-          </div>
-          <div class="hospital-card">
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/heart-img.svg" alt="">
-              <div class="hospital-card-title">Cardiology</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">Indraprastha Apollo Hospitals
-                Sarita Vihar, Delhi Mathura Road,
-                New Delhi - 110076, India </div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/heart-img.svg" alt="">
-              <div class="hospital-card-title">Oncology</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address"> Sir Ganga Ram Hospital
-                Rajinder Nagar, New Delhi - 110060, India</div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/heart-img.svg" alt="">
-              <div class="hospital-card-title">Orthopedics</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">Fortis Escorts Heart Institute
-                Okhla Road, New Delhi - 110025, India</div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/heart-img.svg" alt="">
-              <div class="hospital-card-title">Nephrology</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">BLK Super Speciality Hospital
-                Pusa Road, Rajinder Nagar,
-                New Delhi - 110005, India.</div>
+            <div class="welcome-subheading">
+              A trusted platform which is designed to make healthcare
+              accessible, personalized, and convenient. We simplify the process
+              of connecting you with the best hospitals, doctors, and
+              budget-friendly accommodations. Your well-being is our priority,
+              and we&#39;re here to guide you on your journey to optimal health.
             </div>
           </div>
-          <div class="check-more-parent">
-            <button class="check-more-btn">Check more</button>
+          <div class="welcome-buttons">
+            <div class="card-button book-appointment">
+              <div class="button-text">Book an Appointment</div>
+              <img src="./asset/calender-icon.svg" alt="" />
+            </div>
+            <div class="card-button know-doctors">
+              <div class="button-text">Know about the Doctors</div>
+              <img src="./asset/team.svg" alt="" />
+            </div>
+            <div class="card-button check-hospital">
+              <div class="button-text">Check the Hospitals</div>
+              <img src="./asset/cash.svg" alt="" />
+            </div>
           </div>
         </div>
-        <div class="exclusive-package">
-          <div class="hospital-content">
-            <div class="prefix">
-              Our Exclusive Package
-            </div>
-            <div class="heading">
-              <div class="top">
-                Select Dropartment
-              </div>
-              <div class="dropdown"><button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Cancer
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Cancer</a>
-                  <a class="dropdown-item" href="#">Migrane</a>
-                  <a class="dropdown-item" href="#">Heart Desease</a>
-                </div>
-              </div>
-            </div>
+      </section>
+      <!-- Why we are best -->
+      <section class="we-are-best">
+        <div class="best-container">
+          <div class="best-heading">
+            We try our level best to provide the best service
           </div>
-          <div class="hospital-card">
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-
-              <div class="hospital-card-title">Hospital Name one</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">The gradual
-                accumulation of
-                information about </div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-
-              <div class="hospital-card-title">Hospital Name one</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">The gradual
-                accumulation of
-                information about </div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-
-              <div class="hospital-card-title">Hospital Name one</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">The gradual
-                accumulation of
-                information about </div>
-            </div>
-            <div class="hospital-card-body">
-              <img class="hospital-card-img" src="./asset/hospital.jpg" alt="">
-
-              <div class="hospital-card-title">Hospital Name one</div>
-              <div class="hospital-border"></div>
-              <div class="hospital-address">The gradual
-                accumulation of
-                information about </div>
-            </div>
+          <div class="best-subheading">
+            Dream of always having great wines at home without stressing about
+            it? We are here to help you with just that.
+          </div>
+          <div class="best-content">
+            Your trusted source for reliable healthcare information and
+            resources. We are dedicated to providing you with the latest medical
+            news, expert insights, and valuable health tips to empower you on
+            your wellness journey. Explore our comprehensive content, connect
+            with top healthcare professionals, and take charge of your health
+            with confidence. Your well-being is our priority.
           </div>
           <div class="connect-with-parent">
             <button class="connect-with-btn">Connect With Us!</button>
           </div>
         </div>
+      </section>
+      <!-- SEARCH SECTION -->
+      <div class="search-section">
+        <div class="search-body">
+          <div class="know-top-hospital">
+            <div class="hospital-content">
+              <div class="prefix">Start Your Clinical Journey today!</div>
+              <div class="heading">
+                <div class="text">Know top Hospital in</div>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    New Delhi
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Cancer</a>
+                    <a class="dropdown-item" href="#">Migrane</a>
+                    <a class="dropdown-item" href="#">Heart Desease</a>
+                  </div>
+                </div>
+              </div>
+              <div class="suffix">
+                Explore the best hospitals in different Indian cities on our
+                platform. Find top- notch healthcare facilities to make informed
+                choices for your medical needs. Discover the leading options for
+                your health journey easily.
+              </div>
+            </div>
+            <div class="hospital-card">
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+                <div class="hospital-card-title">
+                  Indraprastha Apollo Hospital
+                </div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  Indraprastha Apollo Hospitals Sarita Vihar, Delhi Mathura
+                  Road, New Delhi - 110076, India
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+                <div class="hospital-card-title">Sir Ganga Ram Hospital</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  Sir Ganga Ram Hospital Rajinder Nagar, New Delhi - 110060,
+                  India
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+                <div class="hospital-card-title">
+                  Fortis Escorts Hospital New Delhil
+                </div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  Fortis Escorts Heart Institute Okhla Road, New Delhi - 110025,
+                  India
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+                <div class="hospital-card-title">
+                  BLK Super Specialty Hospital New Delhi
+                </div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  BLK Super Speciality Hospital Pusa Road, Rajinder Nagar, New
+                  Delhi - 110005, India.
+                </div>
+              </div>
+            </div>
+            <div class="check-more-parent">
+              <button class="check-more-btn">Check more</button>
+            </div>
+          </div>
+          <div class="top-hospital-in">
+            <div class="hospital-content">
+              <div class="prefix">Top Hospital in</div>
+              <div class="heading">New Delhi</div>
+              <div class="suffix">for</div>
+            </div>
+            <div class="hospital-card">
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/heart-img.svg"
+                  alt=""
+                />
+                <div class="hospital-card-title">Cardiology</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  Indraprastha Apollo Hospitals Sarita Vihar, Delhi Mathura
+                  Road, New Delhi - 110076, India
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/heart-img.svg"
+                  alt=""
+                />
+                <div class="hospital-card-title">Oncology</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  Sir Ganga Ram Hospital Rajinder Nagar, New Delhi - 110060,
+                  India
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/heart-img.svg"
+                  alt=""
+                />
+                <div class="hospital-card-title">Orthopedics</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  Fortis Escorts Heart Institute Okhla Road, New Delhi - 110025,
+                  India
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/heart-img.svg"
+                  alt=""
+                />
+                <div class="hospital-card-title">Nephrology</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  BLK Super Speciality Hospital Pusa Road, Rajinder Nagar, New
+                  Delhi - 110005, India.
+                </div>
+              </div>
+            </div>
+            <div class="check-more-parent">
+              <button class="check-more-btn">Check more</button>
+            </div>
+          </div>
+          <div class="exclusive-package">
+            <div class="hospital-content">
+              <div class="prefix">Our Exclusive Package</div>
+              <div class="heading">
+                <div class="top">Select Dropartment</div>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Cancer
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Cancer</a>
+                    <a class="dropdown-item" href="#">Migrane</a>
+                    <a class="dropdown-item" href="#">Heart Desease</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hospital-card">
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+
+                <div class="hospital-card-title">Hospital Name one</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  The gradual accumulation of information about
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+
+                <div class="hospital-card-title">Hospital Name one</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  The gradual accumulation of information about
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+
+                <div class="hospital-card-title">Hospital Name one</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  The gradual accumulation of information about
+                </div>
+              </div>
+              <div class="hospital-card-body">
+                <img
+                  class="hospital-card-img"
+                  src="./asset/hospital.jpg"
+                  alt=""
+                />
+
+                <div class="hospital-card-title">Hospital Name one</div>
+                <div class="hospital-border"></div>
+                <div class="hospital-address">
+                  The gradual accumulation of information about
+                </div>
+              </div>
+            </div>
+            <div class="connect-with-parent">
+              <button class="connect-with-btn">Connect With Us!</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- BLOG -->
-    <section class="blog-container">
+      <!-- BLOG -->
+      <!-- <section class="blog-container"> 
       <div class="blog-body">
         <div class="section-header">
           <div class="prefix">
@@ -390,61 +555,93 @@
         </div>
       </div>
 
-    </section>
-    <!-- ABOUT US -->
-    <section class="about-us-section">
-      <div class="about-us">
-        <div class="photo-part">
-          <img class="male-doc" src="./asset/male-doc.svg" alt="">
-          <img class="star-part" src="./asset/star-about.svg" alt="">
-          <img class="female-doc" src="./asset/female-doc.svg" alt="">
-        </div>
-        <div class="content-part">
-          <div class="about-prefix">
-            <div class="vertical-border"></div>
-            <div class="about-us-heading">About Us</div>
+     </section> -->
+      <!-- ABOUT US -->
+      <section class="about-us-section">
+        <div class="about-us">
+          <div class="photo-part">
+            <img class="male-doc" src="./asset/male-doc.svg" alt="" />
+            <img class="star-part" src="./asset/star-about.svg" alt="" />
+            <img class="female-doc" src="./asset/female-doc.svg" alt="" />
           </div>
-          <div class="about-title">Affordable Healthcare Access Through Medihost</div>
-          <div class="about-details">Medihost connects patients to top hospitals and doctors,
-            making quality healthcare affordable
-            and accessible for all. Your well-being matters to us.</div>
-          <div class="list-of-feature">
-            <div class="row-one">
-              <div class="col-one">
-                <img class="mark-tick" src="./asset/mark-tick.png" alt="">Affordable Treatment Packages:
+          <div class="content-part">
+            <div class="about-prefix">
+              <div class="vertical-border"></div>
+              <div class="about-us-heading">About Us</div>
+            </div>
+            <div class="about-title">
+              Affordable Healthcare Access Through Medihost
+            </div>
+            <div class="about-details">
+              Medihost connects patients to top hospitals and doctors, making
+              quality healthcare affordable and accessible for all. Your
+              well-being matters to us.
+            </div>
+            <div class="list-of-feature">
+              <div class="row-one">
+                <div class="col-one">
+                  <img
+                    class="mark-tick"
+                    src="./asset/mark-tick.png"
+                    alt=""
+                  />Affordable Treatment Packages:
+                </div>
+                <div class="col-two">
+                  <img
+                    class="mark-tick"
+                    src="./asset/mark-tick.png"
+                    alt=""
+                  />Medical Consultation Assistance:
+                </div>
               </div>
-              <div class="col-two"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Medical Consultation
-                Assistance:</div>
-            </div>
-            <div class="row-one">
-              <div class="col-one"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Doctor
-                Matchmaking:
+              <div class="row-one">
+                <div class="col-one">
+                  <img
+                    class="mark-tick"
+                    src="./asset/mark-tick.png"
+                    alt=""
+                  />Doctor Matchmaking:
+                </div>
+                <div class="col-tow">
+                  <img
+                    class="mark-tick"
+                    src="./asset/mark-tick.png"
+                    alt=""
+                  />Hospital Connection Services:
+                </div>
               </div>
-              <div class="col-tow"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Hospital Connection
-                Services:</div>
+              <div class="row-one">
+                <div class="col-one">
+                  <img
+                    class="mark-tick"
+                    src="./asset/mark-tick.png"
+                    alt=""
+                  />Budget-Friendly Accommodations:
+                </div>
+                <div class="col-two"></div>
+              </div>
             </div>
-            <div class="row-one">
-              <div class="col-one"><img class="mark-tick" src="./asset/mark-tick.png" alt="">Budget-Friendly
-                Accommodations:</div>
-              <div class="col-two"></div>
+            <div class="check-more-parent">
+              <button class="check-more-btn" type="button">
+                Discover More
+              </button>
             </div>
-          </div>
-          <div class="check-more-parent">
-            <button class="check-more-btn" type="button">Discover More</button>
           </div>
         </div>
-      </div>
-    </section>
-<section>
-<div class="video-review ">
-  <iframe width="420" height="315"
-  src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-</div>
-</section>
+      </section>
+      <section>
+        <div id="video-review" class="video-review">
+          <iframe
+            width="420"
+            height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+          </iframe>
+        </div>
+      </section>
 
-    <!-- CUSTOMER REVIEW -->
-    <div class="customer-review-slider">
+      <!-- CUSTOMER REVIEW -->
+      <!-- <div class="customer-review-slider">
       <div id="carouselExampleIndicators" class="cutomer-review-body carousel slide" data-ride="carousel">
         <div class="section-body-header">
           <div class="section-header">
@@ -543,14 +740,19 @@
           </a>
         </div>
       </div>
-    </div>
+     </div> -->
 
-    <!-- FOOTER -->
+      <!-- FOOTER -->
+    </main>
     <footer class="footer-container">
       <div class="footer-menu-row">
         <div class="logo-medihost">
           <a href="#" class="company-logo">
-            <img class="company-logo-img" src="./asset/MediHostIndia.png" alt="company logo" />
+            <img
+              class="company-logo-img"
+              src="./asset/MediHostIndia.png"
+              alt="company logo"
+            />
           </a>
         </div>
 
@@ -567,9 +769,7 @@
       </div>
       <div class="line-separator"></div>
       <div class="footer-copyright-row">
-        <div class="all-right-reserved">
-          All right reserved
-        </div>
+        <div class="all-right-reserved">All right reserved</div>
         <div class="social-media">
           <img src="./asset/facebook-icon.svg" alt="company logo" />
           <img src="./asset/instagram-icon.svg" alt="company logo" />
@@ -579,15 +779,20 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-</body>
-
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

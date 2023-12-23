@@ -7,6 +7,10 @@
     font-family: Arial, sans-serif;
 }
 
+main{
+    margin-top: 100px;
+}
+
 .heading-blue-color {
     color: rgb(3, 3, 109);
 }
