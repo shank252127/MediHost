@@ -4,7 +4,11 @@
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+.heading-blue-color {
+    color: rgb(3, 3, 109);
 }
 
 .Treatement-heading {
@@ -43,12 +47,11 @@
 
 
 .read-more-content {
-    font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
     margin: 10px;
     /* padding-top: 80px; */
-    padding: 80px;
+    padding: 40px 80px;
     /* Add other general styles for text and spacing */
 }
 
@@ -130,26 +133,32 @@
     /* Additional list item styles */
 }
 
-.login-container {
+.contact__form {
+    padding: 30px 0;
+    display: flex;
     width: 100%;
-    padding-left: 30%;
-    padding-right: 30%;
-    border: 0.5px solid rgba(204, 204, 204, 0.5);
-    border-radius: 5px;
-    /* background-color: #f9f9f9; */
-    color: white;
-    border-radius: 20px;
-    
+    justify-content: center;
+    margin: 40px 0;
 }
+
+.patient-contact__form {
+    display: flex;
+    background-color: rgb(245, 242, 242);
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
 
 
 .form-group {
     margin-bottom: 15px;
 }
 
-
 label {
-    color: white;
+    color: black;
     display: block;
     margin-bottom: 5px;
 }
@@ -165,6 +174,7 @@ textarea {
     border: 1px solid #ccc;
     box-sizing: border-box;
     margin-top: 5px;
+    border-radius: 8px;
 }
 
 
@@ -200,4 +210,36 @@ button {
     color: #ffffff;
     margin-top: 8px;
     padding-left: 25px;
+}
+
+
+/* Tablet View */
+@media (max-width: 700px) {
+    .patient-contact__form {
+        width: 70%;
+    }
+}
+
+.faq__section {
+    margin: 20px 0;
+    padding: 80px;
+}
+
+.faq__section h3 {
+    background-color: rgb(3, 3, 109);
+    max-width: 80%;
+    padding: 10px 40px;
+    color: white;
+}
+
+.faq__section .faq___card {
+    max-width: 80%;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.faq__section .faq___card .faq___card-question {
+    color: rgb(3, 3, 109);
+    padding: 10px 0;
+    font-weight: 600;
 }
