@@ -185,13 +185,12 @@ label {
     margin-bottom: 5px;
 }
 
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border-radius: 3px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -221,10 +220,6 @@ label,
 input,
 textarea {
     display: block;
-}
-
-button {
-    margin-top: 10px;
 }
 
 .conditions {
